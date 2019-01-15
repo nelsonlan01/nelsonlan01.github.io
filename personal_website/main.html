@@ -1,6 +1,6 @@
 
 <link rel="stylesheet" href="w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="font.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
@@ -29,7 +29,7 @@ min-height: 100%;
 /* Second image (Portfolio) */
 .bgimg-2 {
 background-image: url("b.png");
-min-height: 400px;
+min-height: 600px;
 }
 
 /* Third image (Contact) */
@@ -47,7 +47,19 @@ min-height: 400px;
 background-attachment: scroll;
 min-height: 400px;
 }
+.button {
+  background-color: #969696;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
+
 </style>
 <body>
 
@@ -62,9 +74,9 @@ min-height: 400px;
 <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
 <a href="skill.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> Skill</a>
 <a href="portfolio_main.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-<a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Media Archive</a>
-<a href="#" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Other Archive</a>
-<a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+<a href="media_archive.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Media Archive</a>
+<a href="other_archive.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Other Archive</a>
+<a href="main.html#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
 
 
 </div><!-- Navbar (sit on top) -->
@@ -74,9 +86,9 @@ min-height: 400px;
 	<a href="#about" class="w3-bar-item w3-button" onClick="toggleFunction()">ABOUT</a>
     <a href="#skill" class="w3-bar-item w3-button" onClick="toggleFunction()">Skill</a>
 	<a href="portfolio_main.html" class="w3-bar-item w3-button" onClick="toggleFunction()">PORTFOLIO</a>
-    <a href="#" class="w3-bar-item w3-button" onClick="toggleFunction()">Media Archive</a>
-    <a href="#" class="w3-bar-item w3-button" onClick="toggleFunction()">Other Archive</a>
-	<a href="#contact" class="w3-bar-item w3-button" onClick="toggleFunction()">CONTACT</a>
+    <a href="media_archive.html" class="w3-bar-item w3-button" onClick="toggleFunction()">Media Archive</a>
+    <a href="mother_archive.html" class="w3-bar-item w3-button" onClick="toggleFunction()">Other Archive</a>
+	<a href="main.html#contact" class="w3-bar-item w3-button" onClick="toggleFunction()">CONTACT</a>
 </div>
 </div><!-- Navbar on small screens -->
 
@@ -90,67 +102,29 @@ min-height: 400px;
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
 <h3 class="w3-center">ABOUT ME</h3>
-<p class="w3-center"><em>I love photography</em></p>
-<p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p class="w3-center"><em>I love ...</em></p>
+<p>.</p>
 <div class="w3-row">
 <div class="w3-col m6 w3-center w3-padding-large">
-<p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
-<img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+
 </div>
 
 <!-- Hide this text on small devices -->
 <div class="w3-col m6 w3-hide-small w3-padding-large">
-<p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>Welcome to my website..</p>
 </div>
 </div>
 
 
-
-<div class="w3-content w3-container w3-padding-64" id="skill">
-<p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-<p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
-<div class="w3-light-grey">
-<div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
-</div>
-<p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
-<div class="w3-light-grey">
-<div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
-</div>
-<p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
-<div class="w3-light-grey">
-<div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
-</div>
-</div>
 </div>
 
-<div class="w3-row w3-center w3-dark-grey w3-padding-16">
-<div class="w3-quarter w3-section">
-<span class="w3-xlarge">14+</span><br>
-Partners
-</div>
-<div class="w3-quarter w3-section">
-<span class="w3-xlarge">55+</span><br>
-Projects Done
-</div>
-<div class="w3-quarter w3-section">
-<span class="w3-xlarge">89+</span><br>
-Happy Clients
-</div>
-<div class="w3-quarter w3-section">
-<span class="w3-xlarge">150+</span><br>
-Meetings
-</div>
-</div><!-- about me what+ -->
+
 
 <!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
 <div class="w3-display-middle">
-<span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
-</div>
+		<span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+	</div>
 </div>
 
 
@@ -158,48 +132,27 @@ Meetings
 <!--=====================(Portfolio Section)===============--->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
 <h3 class="w3-center">MY WORK</h3>
-<p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
-
-<!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-<div class="w3-row-padding w3-center">
-<div class="w3-col m3">
-<img src="/w3images/p1.jpg" style="width:100%" onClick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+<p class="w3-center">Here are...... </p><br>
+<div class="w3-center">
+<a href="portfolio_main.html" class="w3-button w3-light-grey "><i class="fa fa-arrow-right w3-margin-right"></i>Go to Portfolio mainpage</a>
 </div>
 
-<div class="w3-col m3">
-<img src="/w3images/p2.jpg" style="width:100%" onClick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
 </div>
-
-<div class="w3-col m3">
-<img src="/w3images/p3.jpg" style="width:100%" onClick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
-</div>
-
-<div class="w3-col m3">
-<img src="/w3images/p4.jpg" style="width:100%" onClick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
-</div>
-</div>
-
-<div class="w3-row-padding w3-center w3-section">
-<div class="w3-col m3">
-<img src="/w3images/p5.jpg" style="width:100%" onClick="onClick(this)" class="w3-hover-opacity" alt="The mist">
-</div>
-
-<div class="w3-col m3">
-<img src="/w3images/p6.jpg" style="width:100%" onClick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
-</div>
-
-<div class="w3-col m3">
-<img src="/w3images/p7.jpg" style="width:100%" onClick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
-</div>
-
-<div class="w3-col m3">
-<img src="/w3images/p8.jpg" style="width:100%" onClick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
-</div>
-
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section"> <span class="w3-xlarge">11+</span><br>
+    a<br>
+    Projects Started</div>
+  <div class="w3-quarter w3-section"> <span class="w3-xlarge">4</span><br>
+    a<br>
+    Projects Done / Ended </div>
+  <div class="w3-quarter w3-section"> <span class="w3-xlarge">7+</span><br>
+    a<br>
+    Projects Ongoing </div>
+</div><!-- about me what+ -->
 
   <!--<a href="#" class="w3-btn w3-black">Link Button</a>-->
 	<!--<button class="w3-button w3-padding-large w3-light-grey" 			     style="margin-top:64px">LOAD MORE</button>-->
-</div>
+
 </div>
 <!--=====================(Portfolio Section)===============---> <!-- portfolio -->
 
