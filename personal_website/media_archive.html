@@ -1,6 +1,8 @@
 <link rel="stylesheet" href="w3.css">
 <link rel="stylesheet" href="font.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/main.css" />
+
 <style>
 body, h1, h2, h3, h4, h5, h6 {
 	font-family: "Lato", sans-serif;
@@ -266,7 +268,7 @@ span.mcserver {
 <!---------------------- 3Ds Max -------------------------------> 
 <!---------------------- 3Ds Max -------------------------------> 
 
-<div class="bgimg-2 w3-display-container w3-opacity-min" id="GameDev">
+<div class="bgimg-2 w3-display-container w3-opacity-min" >
 	<div class="w3-display-middle" style="white-space:nowrap;">
 	<span class="w3-center w3-padding-large w3-black w3-xlarge  w3-animate-opacity">Static screenshots, pictures  <span class="w3-hide-small"> and concept art pictures display.</span> </span>
 
@@ -274,41 +276,66 @@ span.mcserver {
 	</div>
 </div><!-- Logo Text -->
 
-<div class="w3-content  w3-padding-8" id="GameDev_skill">
-    <p class="w3-center "> 靜態截圖 及 概念圖 等展示。</p>
-    <p class="w3-center "> Static screenshots, pictures, and concept art pictures display.</p>
-    
-<div class="w3-content w3-container " id="project_1_picture">
-  <h3 class="w3-center">專案一 MC Server</h3>
- <!-- <p class="w3-center"><em></em></p> -->
-  <br>
-    
-  <!-- Photos of Project 1 -->
-  <!-- Photos of Project 1 -->
-<div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>123456</b></p>
-      <img src="/w3images/avatar_hat.jpg" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Testing1" width="400" height="400">
-    </div>
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>123456</b></p>
-      <img src="/w3images/avatar_hat.jpg" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Testing1" width="400" height="400">
-    </div>
-</div>
+<div class="w3-content  w3-padding-8 w3-myfont" >
+    <p class="w3-center"> 靜態截圖 及 概念圖 等展示。</p>
+    <p class="w3-center"> Static screenshots, pictures, and concept art pictures display.</p>   
+</div>	
+	
+						<section id="galleries">
 
-<div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>123456</b></p>
-      <img src="/w3images/avatar_hat.jpg"  onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Testing1" width="400" height="400">
-    </div>
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>123456</b></p>
-      <img src="/w3images/avatar_hat.jpg"  onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Testing1" width="400" height="400">
-    </div>
-</div>
-<br>
+							<!-- Photo Galleries -->
+								<div class="gallery">
 
-</div>
+									<!-- Filters -->
+										<header>
+											<h1>Gallery</h1>
+											<ul class="tabs  w3-myfont">
+												<li><a href="#galleries" data-tag="all" class="button active">All</a></li>
+												<li><a href="#galleries" data-tag="專案一" class="button">專案一 合辦伺服器</a></li>
+												<li><a href="#galleries" data-tag="專案三" class="button">專案三 -- 回憶重現/致敬/參考/改編</a></li>
+												<li><a href="#galleries" data-tag="專案四" class="button">專案四 -- 合辨伺服器 伺服主官邸</a></li>
+												<li><a href="#galleries" data-tag="專案六" class="button">專案六 -- 垃圾處理建築創作 </a></li>
+												<li><a href="#galleries" data-tag="無色概念圖" class="button">概念圖 (無色) </a></li>
+											</ul>
+										</header>
+
+										<div class="content ">
+											<!--
+											<div class="media all 專案一">
+												<a href="test_people_full.png"><img src="test_people.png" alt="" title="This right here is a caption." /></a>
+											</div>
+											<div class="media all 專案三">
+												<a href="test_place.png"><img src="test_place.png" alt="" title="This right here is a caption." /></a>
+											</div>
+											-->
+											<div class="media all 專案四">
+												<a href="pictures\media_archive_page\project_4_6_screenshot\mchouse1.jpg"><img src="pictures\media_archive_page\project_4_6_screenshot\mchouse1.jpg" alt="" title="遊戲內 白晝外觀" /></a>
+											</div>
+											<div class="media all 專案四">
+												<a href="pictures\media_archive_page\project_4_6_screenshot\mchouse2.png"><img src="pictures\media_archive_page\project_4_6_screenshot\mchouse2.png" alt="" title="遊戲內 夜間外觀" /></a>
+											</div>
+											<div class="media all 專案四">
+												<a href="pictures\media_archive_page\project_4_6_screenshot\mchouse3.jpg"><img src="pictures\media_archive_page\project_4_6_screenshot\mchouse3.jpg" alt="" title="模組導入 數值企劃" /></a>
+											</div>
+											<div class="media all 專案四">
+												<a href="pictures\media_archive_page\project_4_6_screenshot\mchouse4.png"><img src="pictures\media_archive_page\project_4_6_screenshot\mchouse4.png" alt="" title="遊戲內 數值/範圍預覽" /></a>
+											</div>
+											<div class="media all 專案六">
+												<a href="pictures\media_archive_page\project_4_6_screenshot\bin1.jpg"><img src="pictures\media_archive_page\project_4_6_screenshot\bin1.jpg" alt="" title="遊戲內 實際圖片 1" /></a>
+											</div>
+											<div class="media all 專案六">
+												<a href="pictures\media_archive_page\project_4_6_screenshot\bin2.jpg"><img src="pictures\media_archive_page\project_4_6_screenshot\bin2.jpg" alt="" title="遊戲內 實際圖片 2" /></a>
+											</div>
+  										    <div class="media all 無色概念圖">
+												<a href="pictures\portfolio_sub_page\project_4_6_conceptual_intro_pic\mchousedraft.JPG"><img src="pictures\portfolio_sub_page\project_4_6_conceptual_intro_pic\mchousedraft.JPG" alt="" title="專案四 伺服主官邸 概念圖" /></a>
+											</div>
+											<div class="media all 無色概念圖">
+												<a href="pictures\portfolio_sub_page\project_4_6_conceptual_intro_pic\rubbish_bin draft.JPG"><img src="pictures\portfolio_sub_page\project_4_6_conceptual_intro_pic\rubbish_bin draft.JPG" alt="" title="專案六 垃圾處理建築 概念圖 " /></a>
+											</div>
+										</div>
+								</div>
+						</section>	
+
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onClick="this.style.display='none'"> <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
   <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"> <img id="img01" class="w3-image">
@@ -322,7 +349,19 @@ span.mcserver {
 </footer>
 <!-- Footer --> 
 
+
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
 <script>
+
+
+
 // Modal Image Gallery
 function onClick(element) {
 document.getElementById("img01").src = element.src;
