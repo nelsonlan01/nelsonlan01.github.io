@@ -52,6 +52,34 @@ body, html {
 span.mcserver {
 	font-size: 150%;
 }
+
+#duty_senior #duty_mid {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#duty_senior td, #duty_senior th ,#duty_mid td , #duty_mid th {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 12px;
+}
+
+#duty_senior tr:nth-child(even){background-color: #f2f2f2;}
+#duty_mid tr:nth-child(even){background-color: #f2f2f2;}
+
+#duty_senior tr:hover{background-color: #ddd;}
+#duty_mid tr:hover {background-color: #ddd;}
+
+
+#duty_senior th , #duty_mid th{
+  padding-top: 18px;
+  padding-bottom: 18px;
+  text-align: center;
+  background-color: #5990ff;
+  color: white;
+}
+
 </style>
 <body>
 <div class="w3-top">
@@ -59,7 +87,10 @@ span.mcserver {
   <!-- Navbar (sit on top) -->
   
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium"> <a href="main.html#about" class="w3-bar-item w3-button" onClick="toggleFunction()">ABOUT</a> <a href="#skill" class="w3-bar-item w3-button" onClick="toggleFunction()">Skill</a> <a href="portfolio_main.html" class="w3-bar-item w3-button" onClick="toggleFunction()">PORTFOLIO</a> <a href="media_archive.html" class="w3-bar-item w3-button" onClick="toggleFunction()">Media Archive</a> <a href="other_archive.html" class="w3-bar-item w3-button" onClick="toggleFunction()">Other Archive</a> <a href="main.html#contact" class="w3-bar-item w3-button" onClick="toggleFunction()">CONTACT</a> </div>
-</div>
+
+  
+  </div>
+
 <!-- Navbar on small screens -->
 
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
@@ -68,23 +99,114 @@ span.mcserver {
 <!-- Logo Text --> 
 
 <!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64 w3-myfont" id="about">
+<div class=" w3-container w3-padding-64 w3-myfont" id="about">
   <h3 class="w3-center  w3-myfont">PORTFOLIO SEQUENCE</h3>
   <p class="w3-center  w3-myfont">Order by "investment value".</p>
   <h3 class="w3-center  w3-myfont">作品集目錄</h3>
   <p class="w3-center  w3-myfont">按照投資量多到少排序</p>
-  <p>.......</p>
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p>
-      <br>
-      <img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333"> </div>
-    
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>Welcome to my website. .....</p>
-    </div>
-  </div>
+    <hr>
+
+	<div class=" w3-container w3-padding-32 " id="portfolio">
+		<table id="duty_senior">
+		 <h3 class="w3-center  w3-myfont">較高級 或 需顧及更廣範的職權 <br> Senior & more resourcefulness position</h3>
+		<tr>
+			<th>Duties / Jobs <br> <br>職責</th>
+			<th>Project I & VIII <br> Minecraft Server Hosting <br> <br> Minecraft 伺服器營運</th>
+			<th>Project II <br> Final Year Project <br> <br> 123 </th>
+			<th>Project III <br> Nanaimo Rebuild <br> 123 </th>
+			<th>Project IV, VI, IX <br> Cities Skyline 3D Modelling <br> 123 </th>
+			<th>Project VII <br> Train Broadcast<br> Grapic Design <br> 123 </th>
+			<th>Project XI <br> Prime Education 'X' RPG <br> 123 </th>
+		</tr>
+		<tr>
+			<td> Project Director / Lead  <br> 專案製作主領</td>
+			<td> Major <br> 主責 </td>
+			<td> Groupmate <br> 由其他成員負責  </td>
+			<td> Major <br> 主責 </td>
+			<td> Major <br> 主責 </td>
+			<td> Minor <br> 非主責 </td>
+			<td> Major <br> 主責 </td>
+		</tr>
+		<tr>
+			<td> Assist Project Manager / Lead  <br> 專案製作副手</td>
+			<td> Groupmate <br> 由其他成員負責 </td>
+			<td> Major <br> 主責 </td>
+			<td> Foreign <br> 由觀眾提供意見主導 </td>
+			<td>   </td>
+			<td>   </td>
+			<td>   </td>
+		</tr>
+		<tr>
+			<td> Server Host / Owner <br> DevOps <br> 伺服主持 及<br>開發/營運服務提供者 </td>
+			<td> Major <br> 主責 </td>
+			<td>   </td>
+			<td>   </td>
+			<td>   </td>
+			<td>   </td>
+			<td>   </td>
+		</tr>
+		<tr>
+			<td> System Administrator / DBA <br> 伺服後台數據庫/軟硬件管理員 </td>
+			<td> Minor <br> 非主責 </td>
+			<td>   </td>
+			<td>   </td>
+			<td>   </td>
+			<td>   </td>
+			<td>   </td>
+		</tr>
+		<tr><br>
+	</table>
+		<br>
+	<hr>
+		<h3 class="w3-center  w3-myfont"> 行內要角 <br> Main and crucial position</h3>
+		<table id="duty_mid">
+		<tr>
+			<th>Duties / Jobs <br> <br>職責</th>
+			<th>Project I & VIII <br> Minecraft Server Hosting <br> <br> Minecraft 伺服器營運</th>
+			<th>Project II <br> Final Year Project <br> <br> 123 </th>
+			<th>Project III <br> Nanaimo Rebuild <br> 123 </th>
+			<th>Project IV, VI, IX <br> Cities Skyline 3D Modelling <br> 123 </th>
+			<th>Project VII <br> Train Broadcast<br> Grapic Design <br> 123 </th>
+			<th>Project XI <br> Prime Education 'X' RPG <br> 123 </th>
+		</tr>
+		<tr>
+			<td> Game Designer / Architect <br> 遊戲設計企劃/建築師</td>
+			<td> Major <br> 主責 </td>
+			<td> Minor <br> 非主責 </td>
+			<td> Major <br> 主責 </td>
+			<td>   </td>
+			<td>   </td>
+			<td> Major <br> 主責 </td>
+		</tr>
+		<tr>
+			<td> Game Developer <br> 遊戲開發員</td>
+			<td> Major <br> 主責 </td>
+			<td> Groupmate <br> 由其他成員負責 </td>
+			<td> Major <br> 主責 </td>
+			<td> Minor <br> 非主責 </td>
+			<td>   </td>
+			<td> Major <br> 主責 </td>
+		</tr>
+		<tr>
+			<td> Game 2D / 3D Artist <br> 遊戲2D / 3D美術員 </td>
+			<td> Major <br> 主責 </td>
+			<td> Major <br> 主責 </td>
+			<td> Major <br> 主責 </td>
+			<td> Major <br> 主責 </td>
+			<td> Major <br> 主責 </td>
+			<td> Major <br> 主責 </td>
+		</tr>
+		<tr>
+			<td> QA / QC <br> 質量保證 及 管制 </td>
+			<td> Major <br> 主責 </td>
+			<td> Major <br> 主責 </td>
+			<td> Major <br> 主責 </td>
+			<td> Major <br> 主責 </td>
+			<td>   </td>
+			<td> Major <br> 主責 </td>
+		</tr>
+		<tr><br>
+	</table>
 </div>
 <div class="w3-row w3-center w3-dark-grey w3-padding-16">
   <div class="w3-quarter w3-section"> <span class="w3-xlarge">11+</span><br>
@@ -97,12 +219,22 @@ span.mcserver {
     a<br>
     Projects Ongoing </div>
 </div>
+</div>
 <!-- about me what+ --> 
 
 <!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-2 w3-display-container w3-opacity-min  w3-myfont">
   <div class="w3-display-middle"> <span class="w3-justify w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">專案一--Project I</span> </div>
-  <div class="w3-display-bottommiddle  w3-myfont" style="top:55%;left:50%"> <span class="w3-xlarge w3-black w3-text-white w3-animate-opacity">Minecraft Server w/ Youtube Creator</span> </div>
+  <div class="w3-display-bottommiddle  w3-myfont" style="top:55%;left:50%"> <span class="w3-xlarge w3-black w3-text-white w3-animate-opacity">Minecraft Server w/ Youtube Creator</span> 
+ 
+ <div class="w3-center">
+   <br>
+   <a href="#home" class=" w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  </div>
+  
+  </div>
+  
+ 
   <!--<div class="w3-display-middle" style="top:65%;left:50%">
   		<span class="w3-justify  w3-black w3-xlarge w3-wide w3-animate-opacity" >
         <br> </span>--> 
@@ -111,16 +243,7 @@ span.mcserver {
 </div>
 
 <!--=====================(Portfolio Section)===============--->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br>
-    Click on the images to make them bigger</em></p>
-  <br>
-  
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3"> <img src="/w3images/p1.jpg" style="width:100%" onClick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains"> </div>
-  </div>
+
 </div>
 <!--=====================(Portfolio Section)===============---> <!-- portfolio --> 
 
