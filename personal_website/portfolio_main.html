@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="w3.css">
 <link rel="stylesheet" href="font.css">
+<link rel="stylesheet" href="3dbutton.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body, h1, h2, h3, h4, h5, h6 {
@@ -19,6 +20,10 @@ body, html {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+.bgimg-0 {
+	background-image: url("minecraft_server_gate.png");
+	min-height: 100%;
 }
 /* First image (Logo. Full height) */
 .bgimg-1 {
@@ -106,9 +111,15 @@ span.mcserver {
 
   
   </div>
-
+  	<br>
+	<hr>
+<div class="bgimg-0 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;"> <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">PORTFOLIO <span class="w3-hide-small">MAIN</span> PAGE</span> </div>
+</div>
+<!-- Logo Text --> 
 <!-- Navbar on small screens -->
-
+	<br>
+	<hr>
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;"> <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">PORTFOLIO <span class="w3-hide-small">MAIN</span> PAGE</span> </div>
 </div>
@@ -133,8 +144,17 @@ span.mcserver {
     Projects Ongoing </div>
 </div>
     <hr>
+		<div class=" w3-container w3-padding-64 w3-myfont w3-center" id="about">
+			<h4 class=" w3-myfont"> 【　職權一覽　/　Job Duties　】</h4>
+			<h5 class=" w3-myfont"> 下面三個表格會指出以往在專案，我是主／非主責（受任）於那些崗位上及職權範圍。以下是對每一職權範圍的解釋。</h5>
+			<h5 class=" w3-myfont"> There are three charts at the rest of this page, the chart illustrate how I engaged in different roles of the project.</h5>
+			<h4 class=" w3-myfont"> 【　釋疑　/　Elucidate　】</h4>
+		</div>
+
+
+    <hr>
 	<div class=" w3-container w3-padding-32 " id="portfolio">
-		<table id="duty_senior">
+		<table id="duty_senior" align="center">
 		 <h3 class="w3-center  w3-myfont">較高級 或 需顧及更廣範的職權 <br> Senior & more resourcefulness position</h3>
 		<tr>
 			<th>Duties / Jobs <br> <br>職責</th>
@@ -144,49 +164,54 @@ span.mcserver {
 			<th>Project IV, VI, IX <br>=====<br> Cities Skyline 3D Modelling <br> <br>  Cities Skyline 3D 模組製作</th>
 			<th>Project VII <br>=====<br> Train Broadcast<br> Grapic Design <br> <br> 列車報站 平面設計 </th>
 			<th>Project XI <br>=====<br> Prime Education 'X' RPG <br> <br> 質數 X RPG遊戲</th>
+			<th>Project XII <br>=====<br> Hytale Server Hosting <br> <br> Hytale 伺服器營運 <br>(未開始)</th>
 		</tr>
 		<tr>
-			<td> Project Director / Lead  <br> 專案製作主領</td>
+			<td><b> Project Director / Lead  <br> 專案製作主領 </b></td>
 			<td> Major <br> 主責 </td>
 			<td> Groupmate <br> 由其他成員負責  </td>
 			<td> Major <br> 主責 </td>
 			<td> Major <br> 主責 </td>
 			<td> Minor <br> 非主責 </td>
 			<td> Major <br> 主責 </td>
+			<td> Major, with investor <br> 與投資者共同主責 </td>
 		</tr>
 		<tr>
-			<td> Assist Project Manager / Lead  <br> 專案製作副手</td>
+			<td><b> Assist Project Manager / Lead  <br> 專案製作副手 </b></td>
 			<td> Groupmate <br> 由其他成員負責 </td>
 			<td> Major <br> 主責 </td>
 			<td> Foreign <br> 由觀眾提供意見主導 </td>
 			<td>   </td>
 			<td>   </td>
 			<td>   </td>
+			<td>   </td>
 		</tr>
 		<tr>
-			<td> Server Host / Owner <br> DevOps <br> 伺服主持 及<br>開發/營運服務提供者 </td>
+			<td><b> Server Host / Owner <br> DevOps <br> 伺服主持 及<br>開發/營運服務提供者 </b></td>
 			<td> Major <br> 主責 </td>
 			<td>   </td>
 			<td>   </td>
 			<td>   </td>
 			<td>   </td>
 			<td>   </td>
+			<td> Major, with investor <br> 與投資者共同主責 </td>
 		</tr>
 		<tr>
-			<td> System Administrator / DBA <br> 伺服後台數據庫/軟硬件管理員 </td>
+			<td><b> System Administrator / DBA <br> 伺服後台數據庫/軟硬件管理員 </b></td>
 			<td> Minor <br> 非主責 </td>
 			<td>   </td>
 			<td>   </td>
 			<td>   </td>
 			<td>   </td>
 			<td>   </td>
+			<td> Provided by Investor <br> 由投資者提供 </td>
 		</tr>
 		<tr><br>
 	</table>
 		<br>
 	<hr>
 		<h3 class="w3-center  w3-myfont"> 行內要角 <br> Main and crucial positions</h3>
-		<table id="duty_mid">
+		<table id="duty_mid" align="center">
 		<tr>
 			<th>Duties / Jobs <br> <br>職責</th>
 			<th>Project I & VIII <br>=====<br> Minecraft Server Hosting <br> <br> Minecraft 伺服器營運</th>
@@ -195,41 +220,46 @@ span.mcserver {
 			<th>Project IV, VI, IX <br>=====<br> Cities Skyline 3D Modelling <br> <br>  Cities Skyline 3D 模組製作</th>
 			<th>Project VII <br>=====<br> Train Broadcast<br> Grapic Design <br> <br> 列車報站 平面設計 </th>
 			<th>Project XI <br>=====<br> Prime Education 'X' RPG <br> <br> 質數 X RPG遊戲</th>
+			<th>Project XII <br>=====<br> Hytale Server Hosting <br> <br> Hytale 伺服器營運 <br>(未開始)</th>
 		</tr>
 		<tr>
-			<td> Game Designer / Architect <br> 遊戲設計企劃/建築師</td>
+			<td><b> Game Designer / Architect <br> 遊戲設計企劃/建築師 </b></td>
 			<td> Major <br> 主責 </td>
 			<td> Minor <br> 非主責 </td>
 			<td> Major <br> 主責 </td>
 			<td>   </td>
 			<td>   </td>
 			<td> Major <br> 主責 </td>
+			<td> Major <br> 主責 </td>
 		</tr>
 		<tr>
-			<td> Game Developer <br> 遊戲開發員</td>
+			<td><b> Game Developer <br> 遊戲開發員 </b></td>
 			<td> Major <br> 主責 </td>
 			<td> Groupmate <br> 由其他成員負責 </td>
 			<td> Major <br> 主責 </td>
 			<td> Minor <br> 非主責 </td>
 			<td>   </td>
 			<td> Major <br> 主責 </td>
-		</tr>
-		<tr>
-			<td> Game 2D / 3D Artist <br> 遊戲2D / 3D美術員 </td>
-			<td> Major <br> 主責 </td>
-			<td> Major <br> 主責 </td>
-			<td> Major <br> 主責 </td>
-			<td> Major <br> 主責 </td>
-			<td> Major <br> 主責 </td>
 			<td> Major <br> 主責 </td>
 		</tr>
 		<tr>
-			<td> QA / QC <br> 質量保證 及 管制 </td>
+			<td><b> Game 2D / 3D Artist <br> 遊戲2D / 3D美術員 </b></td>
+			<td> Major <br> 主責 </td>
+			<td> Major <br> 主責 </td>
+			<td> Major <br> 主責 </td>
+			<td> Major <br> 主責 </td>
+			<td> Major <br> 主責 </td>
+			<td> Major <br> 主責 </td>
+			<td> Major <br> 主責 </td>
+		</tr>
+		<tr>
+			<td><b> QA / QC <br> 質量保證 及 管制 </b></td>
 			<td> Major <br> 主責 </td>
 			<td> Major <br> 主責 </td>
 			<td> Major <br> 主責 </td>
 			<td> Major <br> 主責 </td>
 			<td>   </td>
+			<td> Major <br> 主責 </td>
 			<td> Major <br> 主責 </td>
 		</tr>
 		<tr><br>
@@ -237,7 +267,7 @@ span.mcserver {
 	<br>
 	<hr>
 	<h3 class="w3-center  w3-myfont"> 支援/營運維護角色 <br> Support / Maintenance positions</h3>
-		<table id="duty_mid">
+		<table id="duty_mid" align="center">
 		<tr>
 			<th>Duties / Jobs <br> <br>職責</th>
 			<th>Project I & VIII <br>=====<br> Minecraft Server Hosting <br> <br> Minecraft 伺服器營運</th>
@@ -246,9 +276,11 @@ span.mcserver {
 			<th>Project IV, VI, IX <br>=====<br> Cities Skyline 3D Modelling <br> <br>  Cities Skyline 3D 模組製作</th>
 			<th>Project VII <br>=====<br> Train Broadcast<br> Grapic Design <br> <br> 列車報站 平面設計 </th>
 			<th>Project XI <br>=====<br> Prime Education 'X' RPG <br> <br> 質數 X RPG遊戲</th>
+			<th>Project XII <br>=====<br> Hytale Server Hosting <br> <br> Hytale 伺服器營運 <br>(未開始)</th>
 		</tr>
 		<tr>
-			<td> Multimedia Producer <br> 多媒體內容<br>製作員</td>
+			<td> <b>Multimedia Producer <br> 多媒體內容<br>製作員</b></td>
+			<td> Major <br> 主責 </td>
 			<td> Major <br> 主責 </td>
 			<td> Major <br> 主責 </td>
 			<td> Major <br> 主責 </td>
@@ -257,22 +289,34 @@ span.mcserver {
 			<td> Major <br> 主責 </td>
 		</tr>
 		<tr>
-			<td> Game (Content) Translator <br> 遊戲(內容)<br>翻譯員 </td>
+			<td> <b>Game (Content) Translator <br> 遊戲(內容)<br>翻譯員 </b></td>
 			<td> Major <br> 主責 </td>
 			<td> Minor <br> 非主責 </td>
 			<td> Minor <br> 非主責 </td>
 			<td> Major <br> 主責 </td>
 			<td> Major <br> 主責 </td>
 			<td> Minor <br> 非主責 </td>
+			<td> Major <br> 主責 </td>
 		</tr>
 		<tr>
-			<td> Game Master <br> 遊戲主持者</td>
+			<td> <b>Game (Content) Researcher <br> 遊戲(內容)<br>研究員 </b></td>
+			<td> Major <br> 主責 </td>
+			<td> Minor <br> 非主責 </td>
+			<td> Minor <br> 非主責 </td>
+			<td> Minor <br> 非主責 </td>
+			<td>   </td>
+			<td> Major <br> 主責 </td>
+			<td> Major <br> 主責 </td>
+		</tr>
+		<tr>
+			<td> <b>Game Master <br> 遊戲主持者 </b></td>
 			<td> Major <br> 主責 </td>
 			<td>   </td>
 			<td>   </td>
 			<td>   </td>
 			<td>   </td>
 			<td>   </td>
+			<td> Major <br> 主責 </td>
 		</tr>
 
 	</table>
@@ -284,38 +328,39 @@ span.mcserver {
 <!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-2 w3-display-container w3-opacity-min  w3-myfont">
   <div class="w3-display-middle"> <span class="w3-justify w3-padding-large w3-black w3-xlarge w3-animate-opacity">專案一, 八 --Project I, VIII</span> </div>
-  <div class="w3-display-bottommiddle  w3-myfont" style="top:55%;left:50%"> <span class="w3-xlarge w3-black w3-text-white w3-animate-opacity">Minecraft Server w/ Youtube Creator</span> 
+  <div class="w3-display-bottommiddle  w3-myfont" style="top:55%;left:50%">
+	<span class="w3-xlarge w3-black w3-text-white w3-animate-opacity">Minecraft Server w/ Youtube Creator</span> 
  
- 
-  <!----//button-->
-	<div class="w3-center">
 	<br>
-	<a href="#home" class=" w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-center" id="container_buttons">
+        <p>
+            <a href="#" class="buttonstyle_two">
+                前往專案頁面
+				Go to Project Page(s)
+            </a>
+        </p>
 	</div>
-  <!----//button-->
-    
  </div>
  
   </div> 
-
-	<br> 	
+	
 <!-- Third Parallax Image with Portfolio Text -->
 <div class="bgimg-3 w3-display-container w3-opacity-min  w3-myfont">
   <div class="w3-display-middle"> <span class="w3-justify w3-padding-large w3-black w3-xlarge w3-animate-opacity">專案二--Project II</span> </div>
   <div class="w3-display-bottommiddle  w3-myfont" style="top:55%;left:50%"> <span class="w3-xlarge w3-black w3-text-white w3-animate-opacity">Final Year Project</span> 
  
  
-  <!----//button-->
-	<div class="w3-center">
-	<br>
-	<a href="#home" class=" w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-center" id="container_buttons">
+        <p>
+            <a href="#" class="buttonstyle_two">
+                Click me!
+            </a>
+        </p>
 	</div>
-  <!----//button-->
     
  </div>
  
 </div> 
-<br> 
 
 			
 <!-- 4th Parallax Image with Portfolio Text -->
@@ -323,19 +368,19 @@ span.mcserver {
   <div class="w3-display-middle"> <span class="w3-justify w3-padding-large w3-black w3-xlarge w3-animate-opacity">專案三--Project III</span> </div>
   <div class="w3-display-bottommiddle  w3-myfont" style="top:55%;left:50%"> <span class="w3-xlarge w3-black w3-text-white w3-animate-opacity">Nanaimo Rebuild </span> 
  
- 
-  <!----//button-->
-	<div class="w3-center">
-	<br>
-	<a href="#home" class=" w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-center" id="container_buttons">
+        <p>
+            <a href="#" class="buttonstyle_two">
+                前往專案頁面
+				Go to Project Page(s)
+            </a>
+        </p>
 	</div>
-  <!----//button-->
     
  </div>
  
 </div> 
 
-<br> 
 	
 			
 <!-- 5th Parallax Image with Portfolio Text -->
@@ -343,55 +388,55 @@ span.mcserver {
   <div class="w3-display-middle"> <span class="w3-justify w3-padding-large w3-black w3-xlarge w3-animate-opacity">專案四,六--Project IV, VI</span> </div>
   <div class="w3-display-bottommiddle  w3-myfont" style="top:55%;left:50%"> <span class="w3-xlarge w3-black w3-text-white w3-animate-opacity">Cities Skyline 3D Modelling </span> 
  
- 
-  <!----//button-->
-	<div class="w3-center">
-	<br>
-	<a href="#home" class=" w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+     <div class="w3-center" id="container_buttons">
+        <p>
+            <a href="#" class="buttonstyle_two">
+                前往專案頁面
+				Go to Project Page(s)
+            </a>
+        </p>
 	</div>
-  <!----//button-->
-    
  </div>
  
 </div> 
 			
-<br> 
+
 <!-- 6th Parallax Image with Portfolio Text -->
 <div class="bgimg-6 w3-display-container w3-opacity-min  w3-myfont">
   <div class="w3-display-middle"> <span class="w3-justify w3-padding-large w3-black w3-xlarge w3-animate-opacity">專案七--Project VII</span> </div>
   <div class="w3-display-bottommiddle  w3-myfont" style="top:55%;left:50%"> <span class="w3-xlarge w3-black w3-text-white w3-animate-opacity">Train Broadcast Grapic Design  </span> 
  
- 
-  <!----//button-->
-	<div class="w3-center">
-	<br>
-	<a href="#home" class=" w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-center" id="container_buttons">
+        <p>
+            <a href="#" class="buttonstyle_two">
+                前往專案頁面
+				Go to Project Page(s)
+            </a>
+        </p>
 	</div>
-  <!----//button-->
     
  </div>
  
 </div> 
 
-<br> 
 <!-- 7th Parallax Image with Portfolio Text -->
 <div class="bgimg-7 w3-display-container w3-opacity-min  w3-myfont">
   <div class="w3-display-middle"> <span class="w3-justify w3-padding-large w3-black w3-xlarge w3-animate-opacity">專案十一--Project XI</span> </div>
   <div class="w3-display-bottommiddle  w3-myfont" style="top:55%;left:50%"> <span class="w3-xlarge w3-black w3-text-white w3-animate-opacity">Prime Education X RPG   </span> 
  
- 
-  <!----//button-->
-	<div class="w3-center">
-	<br>
-	<a href="#home" class=" w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-center" id="container_buttons">
+        <p>
+            <a href="#" class="buttonstyle_two">
+                前往專案頁面
+				Go to Project Page(s)
+            </a>
+        </p>
 	</div>
-  <!----//button-->
     
  </div>
  
 </div> 
-
-	<br> 		
+		
 </div>
 </div>
 </div>
