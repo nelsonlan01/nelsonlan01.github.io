@@ -1,0 +1,334 @@
+﻿<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="font.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1, h2, h3, h4, h5, h6 { 
+	font-family: "Lato", sans-serif;
+}
+.w3-myfont{
+	font-family: "Lato_TC", normal;
+}
+body, html {
+	height: 100%;
+	color: #777;
+	line-height: 1.8;
+}
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/* First image (Logo. Full height) */
+.bgimg-1 {
+	background-image: url("pictures/main_page/main_project_2.png");
+	min-height: 100%;
+	/*min-height: 600px;*/
+}
+/* Second image (Portfolio) */
+.bgimg-2 {
+	background-image: url("pictures/portfolio_sub_page/project_4_6/mchouse0_with_word.png");
+	min-height: 100%;
+}
+/* Third image (Contact) */
+.bgimg-3 {
+	background-image: url("pictures/portfolio_sub_page/project_4_6/bin0_with_word.png");
+	min-height: 100%;
+}
+.w3-wide {
+	letter-spacing: 10px;
+}
+.w3-hover-opacity {
+	cursor: pointer;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+.bgimg-1, .bgimg-2, .bgimg-3 {
+	background-attachment: scroll;
+	min-height: 400px;
+}
+}
+span.mcserver {
+	font-size: 150%;
+}
+</style>
+<body>
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar"> <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onClick="toggleFunction()" title="Toggle Navigation Menu"> <i class="fa fa-bars"></i> </a> <a href="main.html" class="w3-bar-item w3-button">HOME</a> <a href="main.html#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a> <a href="skill.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> Skill</a> <a href="portfolio_main.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a> <a href="media_archive.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Media Archive</a> <a href="other_archive.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Other Archive</a> <a href="main.html#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a> </div>
+  <!-- Navbar (sit on top) -->
+  
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium"> <a href="main.html#about" class="w3-bar-item w3-button" onClick="toggleFunction()">ABOUT</a> <a href="#skill" class="w3-bar-item w3-button" onClick="toggleFunction()">Skill</a> <a href="portfolio_main.html" class="w3-bar-item w3-button" onClick="toggleFunction()">PORTFOLIO</a> <a href="media_archive.html" class="w3-bar-item w3-button" onClick="toggleFunction()">Media Archive</a> <a href="other_archive.html" class="w3-bar-item w3-button" onClick="toggleFunction()">Other Archive</a> <a href="main.html#contact" class="w3-bar-item w3-button" onClick="toggleFunction()">CONTACT</a> </div>
+</div>
+<!-- Navbar on small screens -->
+
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <!--<div class="w3-display-middle" style="white-space:nowrap;"> <span class="w3-center w3-padding-large w3-black w3-xlarge  w3-animate-opacity w3-myfont">專案四, 六 : Cities Skyline <span class="w3-hide-small">三維建築建模</span></div>-->
+</div>
+<!-- Logo Text --> 
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64 w3-myfont" id="about">
+
+  <br>
+
+ <div class="w3-center">
+   	<h3 class="w3-center  w3-myfont" id="proj4_intro">【專案二】 畢業作品 影子的內心</h3>
+	<h3 class="w3-center  w3-myfont">Project II  : Final Year Project </h3>
+   <br>
+   <hr>
+ </div>
+</div>
+  
+
+
+
+  </div>
+</div>
+
+
+
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+	
+      <p><b><i class="fa fa-user w3-margin-right"></i>Project Concept</b></p>
+      <br>
+      <img src="pictures\portfolio_sub_page\project_4_6_conceptual_intro_pic\mchousedraft.JPG" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of draft1" width="80%"height="100%" onClick="onClick(this)"> 
+	  <br>
+	  123456
+	  </div>
+    
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+		<h4 class=" w3-myfont">【本作目的/目標】 (Aim / Perspective)</h4>
+		<h5 class="  w3-myfont"> ●  最簡單來說只有一句話:「每一組做一份畢業作品」​。</h5>
+		<h5 class=" w3-myfont"> ● 「電子遊戲除了為人們帶來額外娛樂；同時也可以教育啟蒙人民,發揮他們應有的潛能
+天賦。」 ​—— 這句不是什麼偉人說的,是我在讀第一年大專(基礎文憑)對公眾(學校
+匯報)說的。</h5>
+		<h5 class="  w3-myfont"> ●  後來我們最後選擇了,一種 RPG教人美德和人際關係。　</h5>
+	<br>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	    <h4 class="w3-center  w3-myfont">【作品 總覽文案】 (Documentation)</h4>
+	<a href="https://drive.google.com/open?id=1c5TsixE3RZoOg2udsJ7eQG1tVFroJg7O" class="w3-center w3-button w3-light-grey"><i class="fa fa-arrow-right w3-margin-right"></i>Go 前往</a>
+	   <br>
+	<h4 class="w3-center  w3-myfont">【使用技能 / 軟件】(Used skill sectors)</h4>
+	<h5 class="w3-center  w3-myfont">  ●  SketchUp </h5>
+	<h5 class="w3-center  w3-myfont">  ●  Autodesk 3Ds Max </h5>
+	<h5 class="w3-center  w3-myfont">  ●  Adobe Photoshop </h5>
+	
+	
+	
+	
+	
+	
+	
+	
+
+	<br>
+		<h4 class="w3-myfont">【建築歷史】</h4>
+		<h5 class="w3-myfont"> ● 這建築原址是「 沙粒城市政廳」，現以改劃「官邸 」之用。　</h5>
+		<h5 class="w3-myfont"> ● 若以它為中心作起始，750格範圍內就歸屬於「 沙粒城（城址）的節點」。</h5>
+		<h5 class="w3-myfont"> ● 是整個伺服世界中的重要地標之一。</h5>
+	<br>
+	<h4 class="w3-myfont">【本建築定位及用途】</h4>
+
+		<h5 class="w3-myfont"> ● 它並不再以作為「 2x2住宅」，而改以一個「 等級三的	『 專屬／獨有建築』」的身份繼續服務市民。</h5>
+
+		<h5 class="w3-myfont"> ● 它會提供750格的「 娛樂半徑」，所以非常適合用作旅遊及消遣康體（公園）類用途。</h5>
+		<h5 class="w3-myfont"> ● 每週的營運成本也非常低，只需$9.6。是吸引市民及遊客的建築之一。</h5>
+
+		<h5 class="w3-myfont"> ● 但是，它也會帶來一些交通上的小問題，因為很多人會到這裡。然而，這建築只可以建一座，不像公園一樣可以無限放置。</h5>
+
+    <h5 class="w3-myfont"> ● 此建築有效地帶動地區發展，所以放置前三思。建議置於城市公園附近。</h5>
+	<br>
+	
+	
+	
+	
+	
+      <h4 class=" w3-myfont">【Create intention】</h4>
+        <h5 class=" w3-myfont"> ● This is a house constructed by the server hoster (as know as the creator of this building), that in a private Minecraft server.
+　</h5>
+		<h5 class="  w3-myfont"> ● How about re-creating in Cities: Skyline by using SketchUp modeling method? Yep.</h5>
+		<h5 class="  w3-myfont"> ● Spent 5 hours to make this。</h5>
+	<br>
+		<h4 class="w3-myfont">【Building History】</h4>
+		<h5 class="w3-myfont"> ● This house is the city hall of Sands' City in the old day. 
+　</h5>
+		<h5 class="w3-myfont"> ● It means 750 blocks around this house is affiliated to the node of Sands' City. </h5>
+	<br>
+	<h4 class="w3-myfont">【Building's position】</h4>
+
+		<h5 class="w3-myfont"> ● Thus, it will not serve as a 2x2 residential block, but a 2X2 style, level 3 uni building instead. </h5>
+
+		<h5 class="w3-myfont"> ● It has a 750 units radius of entertainment provided and is really suitable for tourism, or recreation.</h5>
+		<h5 class="w3-myfont"> ● The upkeep of this also cheap only $9.6 / per week , a great way to attract tourism and resident. </h5>
+
+		<h5 class="w3-myfont"> ● However, it can also bring some minor traffic problem because of a bunch of people goes there.</h5>
+
+    <h5 class="w3-myfont"> ● Also, it only can build only one of this house instead of the park which can build unlimited. </h5>
+    <h5 class="w3-myfont"> ● 
+So be careful when you pop this building down. 
+Advise popping this in central park which player built, to booth up tourist.</h5>
+	<br>
+	
+	   
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="w3-row w3-myfont"  id="proj4_photo">
+        <div class="w3-col m6 w3-center w3-padding-large">
+			<p><b><i class="fa fa-user w3-margin-right"></i>白晝外觀</b></p>
+			<img src="pictures\media_archive_page\project_4_6_screenshot\mchouse1.jpg" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Testing1" width="600" height="500">
+        </div>
+        <div class="w3-col m6 w3-center w3-padding-large">
+			<p><b><i class="fa fa-user w3-margin-right"></i>夜間外觀</b></p>
+			<img src="pictures\media_archive_page\project_4_6_screenshot\mchouse3.jpg" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Testing1" width="600" height="500">
+        </div>
+    </div>
+	<div class="w3-row w3-myfont"  id="proj4_photo">
+        <div class="w3-col m6 w3-center w3-padding-large">
+			<p><b><i class="fa fa-user w3-margin-right"></i>模組導入 數值企劃</b></p>
+			<img src="pictures\media_archive_page\project_4_6_screenshot\mchouse2.png" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Testing1" width="600" height="500">
+        </div>
+    <div class="w3-col m6 w3-center w3-padding-large">
+			<p><b><i class="fa fa-user w3-margin-right"></i>遊戲內 數值/範圍預覽</b></p>
+			<img src="pictures\media_archive_page\project_4_6_screenshot\mchouse4.png" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Testing1" width="600" height="500">
+        </div>
+    </div>
+  </div>
+</div>
+
+  <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+	<div class="w3-third w3-section w3-myfont"> <span class="w3-large">
+	    <br>
+		前往 圖片 (靜態) 作品示例
+		<br>
+		Picture archive
+		<br>
+		<a href="media_archive.html#galleries" class="w3-button w3-light-grey"><i class="fa fa-arrow-right w3-margin-right"></i>Go 前往</a>
+			    <br>		<br>
+		前往 影片 (動態) 作品示例
+		<br>
+		Video archive<br>
+		<a href="media_archive.html#project_4_6" class="w3-button w3-light-grey"><i class="fa fa-arrow-right w3-margin-right"></i>Go 前往</a>
+	</div>
+	<div class="w3-third w3-section w3-myfont"> <span class="w3-xlarge">
+       【專案四】 <br>
+	   合辨伺服器 伺服主官邸
+		
+		<div class="w3-half w3-section w3-myfont"> <span class="w3-small">
+		文案企劃
+		<br>		
+		Documentation<br>		
+		<a href="https://drive.google.com/open?id=1EeAu8POOrPmno2PFaEwyg9miSf_bn8h9" class="w3-button w3-light-grey"><i class="fa fa-arrow-right w3-margin-right"></i>Go 前往</a>
+		</div>
+	   
+	          	<div class="w3-half w3-section w3-myfont"> <span class="w3-small">
+		Steam工坊連結
+		<br>
+		Steam Workshop Link		<br>
+		<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1212379524" class="w3-button w3-light-grey"><i class="fa fa-arrow-right w3-margin-right"></i>Go 前往</a>
+		</div>
+	   
+	   
+
+	</div>
+	<div class="w3-third w3-section w3-myfont"> <span class="w3-large">
+		<br>
+	    3D 模型 作品示例
+		<br>
+		3D Model Archive
+		<br>
+		<a href="other_archive.html#gallery_other" class="w3-button w3-light-grey"><i class="fa fa-arrow-right w3-margin-right"></i>Go 前往</a>
+	</div>
+</div>
+     <br>
+
+
+
+<div class="w3-center">
+    <a href="#home" class="w3-button w3-light-grey  "><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  
+</div>
+
+<br>
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onClick="this.style.display='none'"> <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"> <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off"> 
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section"> <a href="https://www.w3schools.com"><i class="fa fa-google w3-hover-opacity" style="font-size:36px";></i></a> <a href="https://www.youtube.com/user/bbbgbg"><i class="fa fa-youtube-play w3-hover-opacity" style="font-size:36px";></i></a> <a href="https://github.com/NelsonLAN"><i class="fa fa-github w3-hover-opacity" style="font-size:36px";></i></a> <a href="https://www.linkedin.com/in/nelsonlan574211143"><i class="fa fa-linkedin w3-hover-opacity" style="font-size:36px";></i></a> </div>
+  <p>Credit: Source from w3school, a great web developer site. And few hours to make this custome site by Nelson, LAN </p>
+</footer>
+<!-- Footer --> 
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+document.getElementById("img01").src = element.src;
+document.getElementById("modal01").style.display = "block";
+var captionText = document.getElementById("caption");
+captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+var navbar = document.getElementById("myNavbar");
+if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+} else {
+navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+}
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+var x = document.getElementById("navDemo");
+if (x.className.indexOf("w3-show") == -1) {
+x.className += " w3-show";
+} else {
+x.className = x.className.replace(" w3-show", "");
+}
+}
+</script>
+</body>
+</html></body>
+</html>
