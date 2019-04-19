@@ -15,7 +15,7 @@ body, html {
 	line-height: 1.8;
 }
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -23,18 +23,22 @@ body, html {
 }
 /* First image (Logo. Full height) */
 .bgimg-1 {
-	background-image: url("pictures/main_page/fyp_2_main.png");
+	background-image: url("pictures/main_page/main_project_2.png");
 	min-height: 100%;
 	/*min-height: 600px;*/
 }
 /* Second image (Portfolio) */
 .bgimg-2 {
-	background-image: url("pictures/portfolio_sub_page/project_4_6/mchouse0_with_word.png");
+	background-image: url("pictures/portfolio_sub_page/project_2_css_slide/fyp_introstory.jpg");
 	min-height: 100%;
 }
 /* Third image (Contact) */
 .bgimg-3{
-	background-image: url("pictures/portfolio_sub_page/project_4_6/mchouse0_with_word.png");
+	background-image: url("pictures/portfolio_sub_page/project_2_css_slide/fyp_intromech.jpg");
+	min-height: 100%;
+}
+.bgimg-4{
+	background-image: url("pictures/portfolio_sub_page/project_2_css_slide/fyp_output.jpg");
 	min-height: 100%;
 }
 .w3-wide {
@@ -95,14 +99,15 @@ span.mcserver {
   <div class="w3-row">
   
     <div class="w3-col m6 w3-center w3-padding-large ">
-	
-      <p><b><i class="fa fa-user w3-margin-right "></i>Project Concept</b></p>
-      <br>
-	  
-	  	<b>【由零開始的創作理念】<br> </b>
-其實一開始要求做一份畢業作品前，團隊內已萌生了三個故事、玩法；直接來說是三個不同遊戲。<br> 分別為RPG、文字導向解迷故事、和編程教學。後來會議過後，最後選擇文字導向，解迷故事遊戲。	
-<br> <br> 
-      <img src="pictures\portfolio_sub_page\project_4_6_conceptual_intro_pic\mchousedraft.JPG" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="創作理念" width="80%"height="100%" onClick="onClick(this)"> 
+	  <h3 class="w3-center  w3-myfont">【由零開始的創作理念】<br>(Project Concept)</h3>
+	  <h4 class="w3-center  w3-myfont">
+其實一開始要求做一份畢業作品前，團隊內已萌生了三個故事、玩法；<br> 直接來說是三個不同遊戲。<br> 分別為RPG、文字導向解迷故事、和編程教學。<br> 後來會議過後，最後選擇文字導向，解迷故事遊戲。<br><br>當然最終作品都要因為實際進度向上下，左右四個方向*修定，<br>最後都能將全數草議落實。<br>	
+<br>
+<br> (以下圖片為所選的創作理念 最原始的草議)
+<br> * 「四個專案發展方向」————是筆者一向領導／參領專案時秉承的態度，<br>可參考個人簡履(About)頁面。
+</h4>
+      <img src="pictures\portfolio_sub_page\project_2_conceptual_intro_pic\fyp_concept01.JPG" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="所選的創作理念 其一" width="600"height="500" onClick="onClick(this)">
+	  <img src="pictures\portfolio_sub_page\project_2_conceptual_intro_pic\fyp_concept02.JPG" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="所選的創作理念 其二" width="600"height="500" onClick="onClick(this)"> 
 	  <br>
 
 	  </div>
@@ -188,8 +193,8 @@ span.mcserver {
  </div>
 	   <br>
    <hr>
-  
-  
+ </div>  
+ <div class="bgimg-3 w3-display-container w3-opacity-min" id="home">  </div>  
 	<div class="w3-row">
 
     
@@ -308,7 +313,7 @@ span.mcserver {
 	
 	
 	
-<div class="bgimg-3 w3-display-container w3-opacity-min" id="home"></div>
+<div class="bgimg-4 w3-display-container w3-opacity-min" id="home"></div>
 
 <div class="w3-center">
    	<h3 class="w3-center  w3-myfont" id="proj4_intro">【專案發行】</h3>
