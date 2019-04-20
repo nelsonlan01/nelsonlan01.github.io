@@ -1,5 +1,6 @@
 ﻿<link rel="stylesheet" href="w3.css">
 <link rel="stylesheet" href="font.css">
+<link rel="stylesheet" href="3dbutton.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body, h1, h2, h3, h4, h5, h6 { 
@@ -14,7 +15,7 @@ body, html {
 	line-height: 1.8;
 }
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -28,12 +29,16 @@ body, html {
 }
 /* Second image (Portfolio) */
 .bgimg-2 {
-	background-image: url("pictures/portfolio_sub_page/project_4_6/mchouse0_with_word.png");
+	background-image: url("pictures/portfolio_sub_page/project_2_css_slide/fyp_introstory.jpg");
 	min-height: 100%;
 }
 /* Third image (Contact) */
-.bgimg-3 {
-	background-image: url("pictures/portfolio_sub_page/project_4_6/bin0_with_word.png");
+.bgimg-3{
+	background-image: url("pictures/portfolio_sub_page/project_2_css_slide/fyp_intromech.jpg");
+	min-height: 100%;
+}
+.bgimg-4{
+	background-image: url("pictures/portfolio_sub_page/project_2_css_slide/fyp_output.jpg");
 	min-height: 100%;
 }
 .w3-wide {
@@ -94,14 +99,15 @@ span.mcserver {
   <div class="w3-row">
   
     <div class="w3-col m6 w3-center w3-padding-large ">
-	
-      <p><b><i class="fa fa-user w3-margin-right "></i>Project Concept</b></p>
-      <br>
-	  
-	  	<b>【由零開始的創作理念】<br> </b>
-其實一開始要求做一份畢業作品前，團隊內已萌生了三個故事、玩法；直接來說是三個不同遊戲。<br> 分別為RPG、文字導向解迷故事、和編程教學。後來會議過後，最後選擇文字導向，解迷故事遊戲。	
-<br> <br> 
-      <img src="pictures\portfolio_sub_page\project_4_6_conceptual_intro_pic\mchousedraft.JPG" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="創作理念" width="80%"height="100%" onClick="onClick(this)"> 
+	  <h3 class="w3-center  w3-myfont">【由零開始的創作理念】<br>(Project Concept)</h3>
+	  <h4 class="w3-center  w3-myfont">
+其實一開始要求做一份畢業作品前，團隊內已萌生了三個故事、玩法；<br> 直接來說是三個不同遊戲。<br> 分別為RPG、文字導向解迷故事、和編程教學。<br> 後來會議過後，最後選擇文字導向，解迷故事遊戲。<br><br>當然最終作品都要因為實際進度向上下，左右四個方向*修定，<br>最後都能將全數草議落實。<br>	
+<br>
+<br> (以下圖片為所選的創作理念 最原始的草議)
+<br> * 「四個專案發展方向」————是筆者一向領導／參領專案時秉承的態度，<br>可參考個人簡履(About)頁面。
+</h4>
+      <img src="pictures\portfolio_sub_page\project_2_conceptual_intro_pic\fyp_concept01.JPG" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="所選的創作理念 其一" width="600"height="500" onClick="onClick(this)">
+	  <img src="pictures\portfolio_sub_page\project_2_conceptual_intro_pic\fyp_concept02.JPG" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="所選的創作理念 其二" width="600"height="500" onClick="onClick(this)"> 
 	  <br>
 
 	  </div>
@@ -136,7 +142,7 @@ span.mcserver {
    <br>
    <hr>
 
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+<div class="bgimg-2 w3-display-container w3-opacity-min" id="home">
 </div>
    
  <div class="w3-center">
@@ -187,8 +193,8 @@ span.mcserver {
  </div>
 	   <br>
    <hr>
-  
-  
+ </div>  
+ <div class="bgimg-3 w3-display-container w3-opacity-min" id="home">  </div>  
 	<div class="w3-row">
 
     
@@ -196,19 +202,19 @@ span.mcserver {
 
 	<h4 class="w3-center w3-myfont">【遊戲特色/機制設定/賣點】 (Unique Gameplay System)</h4>
 		<div class="w3-col s4 w3-hide-small w3-padding-large">
-			<h4 class=" w3-center w3-myfont">  <b> 一) 「會干預劇情的物品」和「不同的結局」</b>​</h4>
+			<h4 class=" w3-center w3-myfont">  <b> 一) 「劇情物品」</b>​</h4>
 			<br>
 			<h5 class="  w3-myfont">
-			<h5 class="  w3-myfont"> ●  	以前由RPG Maker製成的遊戲，不少​都未有加入​本機制，因為會推高任務引擎的製作成
+			<h5 class="  w3-myfont"> ●  	以前由RPG Maker製成的遊戲，不少​都未有加入​本機制，因為會推高任務引擎的製作成本。
 			</h5>
-			<h5 class=" w3-myfont"> ● 增加大量的CheckPoint/Flags，以保存狀態，免得劇情有所衝突</h5>
+			<h5 class=" w3-myfont"> ● 因為要增加大量的CheckPoint/Flags，以保存狀態，免得劇情有所衝突。</h5>
 			<h5 class="  w3-myfont"> ●  但如果在我們一份小型作品加入也無妨。　</h5>
 			
 			<br>
 			
 			<p><b><i class="fa fa-user w3-margin-right"></i>干預劇情物品(其一例子)</b></p>
-			<img src="pictures\media_archive_page\project_4_6_screenshot\mchouse1.jpg" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="劇情物品(其一例子)" width="600" height="500">
-	
+			<img src="pictures\portfolio_sub_page\project_2\fyp_waitowel.png" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="劇情物品(其一例子)" width="600" height="500">
+				<br>
 		</div>
 		
 		<div class="w3-col s4 w3-hide-small w3-padding-large">	
@@ -222,8 +228,8 @@ span.mcserver {
 			<br>
 			
 			<p><b><i class="fa fa-user w3-margin-right"></i> 紙條(其一例子)</b></p>
-			<img src="pictures\media_archive_page\project_4_6_screenshot\mchouse1.jpg" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="紙條(其一例子)" width="600" height="500">
-			
+			<img src="pictures\portfolio_sub_page\project_2\fyp_misschanpaper.png" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="紙條(其一例子)" width="600" height="500">
+						<br>
 	
 		</div>
 
@@ -237,18 +243,77 @@ span.mcserver {
 			<br>
 	
 			<p><b><i class="fa fa-user w3-margin-right"></i> 小遊戲 (截圖一)</b></p>
-			<img src="pictures\media_archive_page\project_4_6_screenshot\mchouse1.jpg" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="小遊戲 (截圖一)" width="600" height="500">
+			<img src="pictures\portfolio_sub_page\project_2\fyp_minigame.png" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="小遊戲 (截圖一)" width="600" height="500">
+				<br>
+
+		</div>
+	<hr>
+	
+	</div> 
+
+	<hr>
+
+	
+   	<h4 class="w3-center w3-myfont">【說明——教學指引　及　劇情——佈局謀篇】 (Tutorial and Storyline planning)</h4>
+	<h5 class="w3-center w3-myfont">  ●  如果強行地加入一個場境去解釋遊戲規則／教玩家如何操作，	<br>倒不如<b>直接把佈局及教學都容入主線故事上</b>；這是近來不少業界作品的做法。
+	<br>	<br>
+	●  省卻唐突，和不需另外建造只會進入一次的場景，加快開發進度，節省成本。	<br><br>
+	●  開發團隊關注到玩家與劇情的接觸，並非限於文本的上，而是多形式的表達。<br>
+	因而使用RPGMaker的場景渲染，令原本單以文字，到現在以<b>動畫彩蛋＋文字方式</b>表達。<br>
+	當然小遊戲也是一個另外的表達方式，正如上文有提到。
+	</h5>
+
+		<div class="w3-row">
+			<div class="w3-col s4 w3-hide-small w3-padding-large">
+			<h4 class=" w3-center w3-myfont">  <b> 一) 「操作說明」</b>​</h4>
+			<br>
+			<h5 class="  w3-myfont"> ●  淺白了明的操作方法，滑鼠鍵盤輸入均可。　</h5>
+			<h5 class="  w3-myfont"> ●  減省介面上很多玩家不常用的選項。　</h5>
+			<h5 class="  w3-myfont"> ●  算是解決了RPGMaker 遊戲的介面選單操作煩複的困難。</h5>
 			
 			<br>
+			
+			<p><b><i class="fa fa-user w3-margin-right"></i>操作說明 (不可跳過)</b></p>
+			<img src="pictures\portfolio_sub_page\project_2\fyp_tutoral.png" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="劇情物品(其一例子)" width="600" height="500">
 	
-			<p><b><i class="fa fa-user w3-margin-right"></i> 小遊戲 (截圖二)</b></p>
-			<img src="pictures\media_archive_page\project_4_6_screenshot\mchouse1.jpg" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="小遊戲 (截圖二)" width="600" height="500">
+		</div>
+		
+		<div class="w3-col s4 w3-hide-small w3-padding-large">	
+			<h4 class="w3-center w3-myfont">    <b> 二) 「故事劇情說明」</b></h4>
+			<br>
+			<h5 class="  w3-myfont"> ●  故事的引導會用一個較隱喻的形式說出。　</h5>
+			<h5 class="  w3-myfont"> ●  亦會在上說明，玩家到了這世界應做的事，你的最終遊戲目標。　</h5>		<h5 class="  w3-myfont"> ●  亦提供線索給玩家下一步應到那去，　<br> 並不要要求玩家漫無目的遊走各處。</h5>
+			
+			<br>
+			
+			<p><b><i class="fa fa-user w3-margin-right"></i> 劇情說明(其一例子)</b></p>
+			<img src="pictures\portfolio_sub_page\project_2\fyp_dialog2.png" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="劇情說明(其一例子)" width="600" height="500">
+			
+	
+		</div>
+
+		<div class="w3-col s4 w3-hide-small w3-padding-large">	
+				<h4 class="w3-center w3-myfont">    <b> 三) 「劇情彩蛋——回憶」</b></h4>
+			<br>
+			<h5 class="  w3-myfont"> ●  彩蛋確實是組成故事引擎的一個大席位。　</h5>
+			<h5 class="  w3-myfont"> ●  回想玩家(主角)的過去，與他過去劇情的位置；如果令到今日劇情的發生。　</h5>	
+	
+			<br>
+	
+			<p><b><i class="fa fa-user w3-margin-right"></i> 劇情彩蛋(其一例子)</b></p>
+			<img src="pictures\portfolio_sub_page\project_2\fyp_memory.png" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="劇情彩蛋(其一例子)" width="600" height="500">
+			
+			<br>
+
 		</div>
 	
-		<br>
-	</div> 		
-   
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home"></div>
+	
+		</div> 
+	
+	
+	
+	
+<div class="bgimg-4 w3-display-container w3-opacity-min" id="home"></div>
 
 <div class="w3-center">
    	<h3 class="w3-center  w3-myfont" id="proj4_intro">【專案發行】</h3>
@@ -291,7 +356,8 @@ span.mcserver {
 		<br>
 		Picture archive
 		<br>
-		<a href="media_archive.html#galleries" class="w3-button w3-light-grey"><i class="fa fa-arrow-right w3-margin-right"></i>Go 前往</a>
+		<br>
+		<a href="#" class="buttonstyle_two">前往 圖片示例 Go</a>
 
 	</div>
 	<div class="w3-third w3-section w3-myfont"> <span class="w3-xlarge">
@@ -302,7 +368,8 @@ span.mcserver {
 		文案企劃
 		<br>
 		Documentation<br>		
-		<a href="#" class="w3-button w3-light-grey"><i class="fa fa-arrow-right w3-margin-right"></i>Go 前往</a>
+		<br>
+		<a href="#" class="buttonstyle_two">前往 文案 Go</a>
 		</div>
 	   
 	   
@@ -315,7 +382,9 @@ span.mcserver {
 		<br>
 		Game Demo
 		<br>
-		<a href="#" class="w3-button w3-light-grey"><i class="fa fa-arrow-right w3-margin-right"></i>Go 前往</a>
+		<br>
+		<a href="#" class="buttonstyle_two">前往 下載作品  Go</a>
+		<!--<a href="#" class="w3-button w3-light-grey"></a>-->
 	</div>
 </div>
     
