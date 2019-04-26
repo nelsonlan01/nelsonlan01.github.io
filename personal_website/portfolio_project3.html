@@ -1,0 +1,439 @@
+﻿<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="font.css">
+<link rel="stylesheet" href="3dbutton.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1, h2, h3, h4, h5, h6 { 
+	font-family: "Lato", sans-serif;
+}
+.w3-myfont{
+	font-family: "Lato_TC", normal;
+}
+body, html {
+	height: 100%;
+	color: #777;
+	line-height: 1.8;
+}
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/* First image (Logo. Full height) */
+.bgimg-1 {
+	background-image: url("pictures/main_page/main_project_2.png");
+	min-height: 100%;
+	/*min-height: 600px;*/
+}
+/* Second image (Portfolio) */
+.bgimg-2 {
+	background-image: url("pictures/portfolio_sub_page/project_2_css_slide/fyp_introstory.jpg");
+	min-height: 100%;
+}
+/* Third image (Contact) */
+.bgimg-3{
+	background-image: url("pictures/portfolio_sub_page/project_2_css_slide/fyp_intromech.jpg");
+	min-height: 100%;
+}
+.bgimg-4{
+	background-image: url("pictures/portfolio_sub_page/project_2_css_slide/fyp_output.jpg");
+	min-height: 100%;
+}
+.w3-wide {
+	letter-spacing: 10px;
+}
+.w3-hover-opacity {
+	cursor: pointer;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+.bgimg-1, .bgimg-2, .bgimg-3 {
+	background-attachment: scroll;
+	min-height: 400px;
+}
+}
+span.mcserver {
+	font-size: 150%;
+}
+</style>
+<body>
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar"> <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onClick="toggleFunction()" title="Toggle Navigation Menu"> <i class="fa fa-bars"></i> </a> <a href="main.html" class="w3-bar-item w3-button">HOME</a> <a href="main.html#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a> <a href="skill.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> Skill</a> <a href="portfolio_main.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a> <a href="media_archive.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Media Archive</a> <a href="other_archive.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Other Archive</a> <a href="main.html#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a> </div>
+  <!-- Navbar (sit on top) -->
+  
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium"> <a href="main.html#about" class="w3-bar-item w3-button" onClick="toggleFunction()">ABOUT</a> <a href="#skill" class="w3-bar-item w3-button" onClick="toggleFunction()">Skill</a> <a href="portfolio_main.html" class="w3-bar-item w3-button" onClick="toggleFunction()">PORTFOLIO</a> <a href="media_archive.html" class="w3-bar-item w3-button" onClick="toggleFunction()">Media Archive</a> <a href="other_archive.html" class="w3-bar-item w3-button" onClick="toggleFunction()">Other Archive</a> <a href="main.html#contact" class="w3-bar-item w3-button" onClick="toggleFunction()">CONTACT</a> </div>
+</div>
+<!-- Navbar on small screens -->
+
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+</div>
+<!-- Logo Text --> 
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64 w3-myfont" id="about">
+
+  <br>
+
+ <div class="w3-center">
+   	<h3 class="w3-center  w3-myfont" id="proj4_intro">【專案三】 回憶重現、模仿、參考改編</h3>
+	<h3 class="w3-center  w3-myfont">Project III  : Nanaimo Rebuild  </h3>
+	
+<h6 class="w3-center  w3-myfont">注意：本專案規劃時以中文為主要語言，因此此頁暫只提供中文版本。 </h6>
+<h6 class="w3-center  w3-myfont">Temporarily available in Chinese ONLY, since project was planned in Chinese as project core language.  </h6>
+   <br>
+   <hr>
+   insert 1 circle head here -.-
+   <hr>
+   <h3 class="w3-center  w3-myfont" id="proj4_intro">【提案部分】</h3>
+	<h3 class="w3-center  w3-myfont">Project Planning </h3>
+ </div>
+</div>
+  </div>
+</div>
+
+
+
+  <div class="w3-row">
+  
+    <div class="w3-col m6 w3-center w3-padding-large ">
+	  <h3 class="w3-center  w3-myfont">【由零開始的創作理念】<br>(Project Concept)</h3>
+	  <h4 class="w3-center  w3-myfont">
+從空白檔案開始做起一隻遊戲，對專案的計劃人來說是一個難度挑戰。<br><br>
+而我在Youtube上收看了來自ExtraCredit頻道，<br>以Cloning game for a MVP(Minimum Viable Product) project一集之後，<br>
+我就覺得可以用這個「里程碑發展模式」去做這一個專案。如是者就開始了。
+<br> 
+<br> (以下圖片為所選的創作理念 第九，及其他舉例用的里程碑的草議)
+<br>
+</h4>
+      <img src="pictures\portfolio_sub_page\project_2_conceptual_intro_pic\fyp_concept01.JPG" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="所選的創作理念 其一" width="600"height="500" onClick="onClick(this)">
+	  <img src="pictures\portfolio_sub_page\project_2_conceptual_intro_pic\fyp_concept02.JPG" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="所選的創作理念 其二" width="600"height="500" onClick="onClick(this)"> 
+	  <br>
+
+	  </div>
+    
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+		<h4 class=" w3-myfont">【本作目的/目標】 (Aim / Perspective)</h4>
+		<h5 class="  w3-myfont">  ●   　本作制作的目的是想以模仿致敬方式， 重構原遊戲的一小部分，作<b>相片／影片形式以外</b>的回憶錄。</h5>
+		<h5 class="  w3-myfont">  ●  　一小部分意思只是指，把飛行、卡片收集兩項， 提取精要部分後；改編製成一個場景(Screen)的最簡可行產品 (
+Minimum Viable Product )。</h5></h5>
+	
+		<br>
+	
+		<h4 class="w3-center    w3-myfont">【使用技能 / 軟件】(Used skill sectors)</h4>
+		<h5 class="  w3-myfont">  ●  Unity 5.14f, 5.40f </h5>
+		<h5 class="  w3-myfont">  ●  Autodesk 3Ds Max 2014, 2017 </h5>
+		<h5 class="  w3-myfont">  ●  Adobe Photoshop CS6 </h5>
+		<h5 class="w3-myfont">  ●  Unity API - Javascript </h5>
+		<h5 class="w3-myfont">  ●  Unity API - C# </h5>
+		<br>
+		
+		<h4 class="w3-center    w3-myfont">【預計操作系統要求】(Used skill sectors)</h4>
+		<h5 class="  w3-myfont">  ●  Microsoft Windows 7 - 10 </h5>
+		<h5 class="  w3-myfont">  ●  Android 手機版本(測試兼容中) </h5>
+	
+		<br>
+	</div>
+	
+</div>
+   <br>
+   <hr>
+
+<div class="bgimg-2 w3-display-container w3-opacity-min" id="home">
+</div>
+   
+ <div class="w3-center">
+   	<h3 class="w3-center  w3-myfont" id="proj4_intro">【原作元素介紹】</h3>
+	<h3 class="w3-center  w3-myfont">Introduction of Original Product</h3>
+	
+	<h5 class="  w3-myfont">原作走卡通風格人物及建築。而原作有著不同機制。   <br>
+	如集卡、卡片現化、竉物、村落、關卡結構、交易所、商店、玩家小屋等等......   <br>
+	玩家可以在村落的關卡飛行，過後可以把卡片現化或是將卡片販賣到交易所。   <br>
+或是提升玩家小屋的熱點,去獲得更多獎勵/權利。   <br>
+也可以在村落間遊走,到商店以消費券獲得對角色有幫助的商品。   <br> </h5>
+
+ </div>
+   <br>
+   <hr>
+	 <div class="w3-center">
+   	<h3 class="w3-center  w3-myfont" id="proj4_intro">【將繼承以下原作元素】</h3>
+	<h3 class="w3-center  w3-myfont">Cloning elements from original </h3>
+	
+	<h5 class="  w3-myfont">主要敘述主角(即玩家)小嵐——原本是校內一個天資聰敏，成績名列前矛的學生，以
+前由傭人照顧。	<br>
+
+
+後因家人工幹後從外地返來，寵愛小嵐。令她每天過著豐饒的物質生活，但令她
+慢慢就走向墮落，變得傲慢。
+	<br>
+
+小嵐狂妄自大的行為言行，令原本她的同學(「好朋友」)都開始恨和賤視她，想殺死
+她。	<br>
+	<br>
+「人無法了解到對方的情感與思想。表面慈悲和諧，但內心懷著兇殘。」
+	<br>	<br>
+但是小嵐仍然不知道其實自己的自大，已經到了一個地步，令人開始討厭她；但她仍然
+繼續去眩曜自己。
+	<br>	<br>
+「人內心都有個容忍度。若果一直受辱，內心會產生仇恨。仇恨超過了可以容忍的地步
+，就會溢出，對外散發著仇恨的氣味。『他 』—— 就會尋找這些氣味的源頭，『他 』——就
+會歡迎、邀請你——到『他的』世界。」
+
+	<br>	<br>
+第二天上學，小嵐再想眩曜自己之際，但是她發現，自己竟在「影子的世界」​。
+	<br>	<br>
+*(屆時玩家需自由探索，才會觸發下一章劇情)* </h5>
+
+ </div>
+	   <br>
+   <hr>
+ </div>  
+ <div class="bgimg-3 w3-display-container w3-opacity-min" id="home">  </div>  
+	<div class="w3-row">
+
+    
+    <!-- Hide this text on small devices -->
+
+	<h4 class="w3-center w3-myfont">【遊戲特色/機制設定/賣點】 (Unique Gameplay System)</h4>
+		<div class="w3-col s4 w3-hide-small w3-padding-large">
+			<h4 class=" w3-center w3-myfont">  <b> 一) 「劇情物品」</b>​</h4>
+			<br>
+			<h5 class="  w3-myfont">
+			<h5 class="  w3-myfont"> ●  	以前由RPG Maker製成的遊戲，不少​都未有加入​本機制，因為會推高任務引擎的製作成本。
+			</h5>
+			<h5 class=" w3-myfont"> ● 因為要增加大量的CheckPoint/Flags，以保存狀態，免得劇情有所衝突。</h5>
+			<h5 class="  w3-myfont"> ●  但如果在我們一份小型作品加入也無妨。　</h5>
+			
+			<br>
+			
+			<p><b><i class="fa fa-user w3-margin-right"></i>干預劇情物品(其一例子)</b></p>
+			<img src="pictures\portfolio_sub_page\project_2\fyp_waitowel.png" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="劇情物品(其一例子)" width="600" height="500">
+				<br>
+		</div>
+		
+		<div class="w3-col s4 w3-hide-small w3-padding-large">	
+			<h4 class="w3-center w3-myfont">    <b> 二) 「收集紙條」</b></h4>
+			<br>	<h5 class="  w3-myfont">
+			<h5 class="  w3-myfont"> ●  	遊戲內會多次​提及到這條目——「紙條​」。是一個透露其他角色真實情感、思考的一個載體。
+			</h5>
+			<h5 class=" w3-myfont"> ● 玩家可在紙條內得知，原本和現在改變了的角色的對立面。</h5>
+			<h5 class="  w3-myfont"> ●  也正正呼應著<<影>>一作的主旨——「表面慈悲和諧，但內心可能懷著兇殘」。　</h5>
+			
+			<br>
+			
+			<p><b><i class="fa fa-user w3-margin-right"></i> 紙條(其一例子)</b></p>
+			<img src="pictures\portfolio_sub_page\project_2\fyp_misschanpaper.png" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="紙條(其一例子)" width="600" height="500">
+						<br>
+	
+		</div>
+
+		<div class="w3-col s4 w3-hide-small w3-padding-large">	
+				<h4 class="w3-center w3-myfont">    <b> 三) 「小遊戲形式解迷」</b></h4>
+			<br>
+			<h5 class="  w3-myfont"> ●  如果​所有解迷都是以文字/對白​去解決的話，確實會沉悶和死版。</h5>
+			<h5 class=" w3-myfont"> ● 而多年來不少遊戲，一些好的劇情就因為過於獨白，文字太多就浪費了。</h5>
+			<h5 class="  w3-myfont"> ●  當然如果你要解釋一樣複雜事物，就另計吧。　</h5>
+	
+			<br>
+	
+			<p><b><i class="fa fa-user w3-margin-right"></i> 小遊戲 (截圖一)</b></p>
+			<img src="pictures\portfolio_sub_page\project_2\fyp_minigame.png" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="小遊戲 (截圖一)" width="600" height="500">
+				<br>
+
+		</div>
+	<hr>
+	
+	</div> 
+
+	<hr>
+
+	
+   	<h4 class="w3-center w3-myfont">【說明——教學指引　及　劇情——佈局謀篇】 (Tutorial and Storyline planning)</h4>
+	<h5 class="w3-center w3-myfont">  ●  如果強行地加入一個場境去解釋遊戲規則／教玩家如何操作，	<br>倒不如<b>直接把佈局及教學都容入主線故事上</b>；這是近來不少業界作品的做法。
+	<br>	<br>
+	●  省卻唐突，和不需另外建造只會進入一次的場景，加快開發進度，節省成本。	<br><br>
+	●  開發團隊關注到玩家與劇情的接觸，並非限於文本的上，而是多形式的表達。<br>
+	因而使用RPGMaker的場景渲染，令原本單以文字，到現在以<b>動畫彩蛋＋文字方式</b>表達。<br>
+	當然小遊戲也是一個另外的表達方式，正如上文有提到。
+	</h5>
+
+		<div class="w3-row">
+			<div class="w3-col s4 w3-hide-small w3-padding-large">
+			<h4 class=" w3-center w3-myfont">  <b> 一) 「操作說明」</b>​</h4>
+			<br>
+			<h5 class="  w3-myfont"> ●  淺白了明的操作方法，滑鼠鍵盤輸入均可。　</h5>
+			<h5 class="  w3-myfont"> ●  減省介面上很多玩家不常用的選項。　</h5>
+			<h5 class="  w3-myfont"> ●  算是解決了RPGMaker 遊戲的介面選單操作煩複的困難。</h5>
+			
+			<br>
+			
+			<p><b><i class="fa fa-user w3-margin-right"></i>操作說明 (不可跳過)</b></p>
+			<img src="pictures\portfolio_sub_page\project_2\fyp_tutoral.png" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="劇情物品(其一例子)" width="600" height="500">
+	
+		</div>
+		
+		<div class="w3-col s4 w3-hide-small w3-padding-large">	
+			<h4 class="w3-center w3-myfont">    <b> 二) 「故事劇情說明」</b></h4>
+			<br>
+			<h5 class="  w3-myfont"> ●  故事的引導會用一個較隱喻的形式說出。　</h5>
+			<h5 class="  w3-myfont"> ●  亦會在上說明，玩家到了這世界應做的事，你的最終遊戲目標。　</h5>		<h5 class="  w3-myfont"> ●  亦提供線索給玩家下一步應到那去，　<br> 並不要要求玩家漫無目的遊走各處。</h5>
+			
+			<br>
+			
+			<p><b><i class="fa fa-user w3-margin-right"></i> 劇情說明(其一例子)</b></p>
+			<img src="pictures\portfolio_sub_page\project_2\fyp_dialog2.png" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="劇情說明(其一例子)" width="600" height="500">
+			
+	
+		</div>
+
+		<div class="w3-col s4 w3-hide-small w3-padding-large">	
+				<h4 class="w3-center w3-myfont">    <b> 三) 「劇情彩蛋——回憶」</b></h4>
+			<br>
+			<h5 class="  w3-myfont"> ●  彩蛋確實是組成故事引擎的一個大席位。　</h5>
+			<h5 class="  w3-myfont"> ●  回想玩家(主角)的過去，與他過去劇情的位置；如果令到今日劇情的發生。　</h5>	
+	
+			<br>
+	
+			<p><b><i class="fa fa-user w3-margin-right"></i> 劇情彩蛋(其一例子)</b></p>
+			<img src="pictures\portfolio_sub_page\project_2\fyp_memory.png" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="劇情彩蛋(其一例子)" width="600" height="500">
+			
+			<br>
+
+		</div>
+	
+	
+		</div> 
+	
+	
+	
+	
+<div class="bgimg-4 w3-display-container w3-opacity-min" id="home"></div>
+
+<div class="w3-center">
+   	<h3 class="w3-center  w3-myfont" id="proj4_intro">【專案發行】</h3>
+	<h3 class="w3-center  w3-myfont">Output Product </h3>
+	
+	   <hr>
+
+	<h4 class="w3-center w3-myfont">【業界評價】 (Reply from Industries)</h4>
+	<h5 class="  w3-myfont">當日發佈會有來自不同遊戲開發、代理商的代表，也有<b>「 香港遊戲創作協會」​</b>的成員。	<br>
+	他們有對每一組的作品給下初步意見。所得意見總括而言是：
+	<br>
+	<br>
+	</h5>
+	<br>
+	
+	<h5 class="  w3-myfont"> ●  ​以文字解迷、多元化、按照現實編寫的劇情形式進行的遊戲在香港很少見；	<br>
+	可以繼續出一些續集/另外形式的遊戲。</h5>
+	<h5 class=" w3-myfont"> ● 本作擺脫一貫RPG架空世界的幻想、公式化的劇情、以及只有打怪為主的RPG類別。	<br>
+	是一個好的開始、嘗試。</h5>
+	<h5 class="  w3-myfont"> ●  但可以加入一些商業元素，去擴充遊戲內容，將潛力發揮更好。　</h5>
+	<h5 class="  w3-myfont"> ●  當熟悉運用引擎，製作這遊戲需時不會太久。但前製就需時甚久。　</h5>
+		<br>
+	<h5 class="  w3-myfont"> ●  後繼：他們當初以為匯報時只是一部分作品，<br>後來得知是全個作品的完整度表示欣賞。　</h5>
+	
+		   <hr>
+	<h4 class="w3-center w3-myfont">【後續／發佈方法】 (Distribution and Follow-up)</h4>
+	<h5 class="  w3-myfont"> ●  　教授後來再選出按照業界成員的評價，再選出四組，​參與學校開放日的學生作品展覽。<br>
+●　正式對外發佈作品，玩家可以試玩遊戲。
+<br>●　玩家可以選擇將作品成品(.exe file)帶回家中。　</h5>
+
+
+	
+</div>
+	
+	
+  <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+	<div class="w3-third w3-section w3-myfont"> <span class="w3-large">
+	    <br>
+		前往 圖片 (靜態) 作品示例
+		<br>
+		Picture archive
+		<br>
+		<br>
+		<a href="#" class="buttonstyle_two">前往 圖片示例 Go</a>
+
+	</div>
+	<div class="w3-third w3-section w3-myfont"> <span class="w3-xlarge">
+       【專案二】 <br>
+	   畢業作品 影子的內心
+		
+		<div class=" w3-section w3-myfont"> <span class="w3-small">
+		文案企劃
+		<br>
+		Documentation<br>		
+		<br>
+		<a href="#" class="buttonstyle_two">前往 文案 Go</a>
+		</div>
+	   
+	   
+	   
+
+	</div>
+	<div class="w3-third w3-section w3-myfont"> <span class="w3-large">
+		<br>
+		前往 實質作品 示例
+		<br>
+		Game Demo
+		<br>
+		<br>
+		<a href="#" class="buttonstyle_two">前往 下載作品  Go</a>
+		<!--<a href="#" class="w3-button w3-light-grey"></a>-->
+	</div>
+</div>
+    
+
+
+
+
+
+<br>
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onClick="this.style.display='none'"> <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"> <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off"> 
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section"> <a href="https://www.w3schools.com"><i class="fa fa-google w3-hover-opacity" style="font-size:36px";></i></a> <a href="https://www.youtube.com/user/bbbgbg"><i class="fa fa-youtube-play w3-hover-opacity" style="font-size:36px";></i></a> <a href="https://github.com/NelsonLAN"><i class="fa fa-github w3-hover-opacity" style="font-size:36px";></i></a> <a href="https://www.linkedin.com/in/nelsonlan574211143"><i class="fa fa-linkedin w3-hover-opacity" style="font-size:36px";></i></a> </div>
+  <p>Credit: Source from w3school, a great web developer site. And few hours to make this custome site by Nelson, LAN </p>
+</footer>
+<!-- Footer --> 
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+document.getElementById("img01").src = element.src;
+document.getElementById("modal01").style.display = "block";
+var captionText = document.getElementById("caption");
+captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+var navbar = document.getElementById("myNavbar");
+if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+} else {
+navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+}
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+var x = document.getElementById("navDemo");
+if (x.className.indexOf("w3-show") == -1) {
+x.className += " w3-show";
+} else {
+x.className = x.className.replace(" w3-show", "");
+}
+}
+</script>
+</body>
+</html></body>
+</html>
