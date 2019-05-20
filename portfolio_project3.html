@@ -50,7 +50,7 @@ body, html {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
 	background-attachment: scroll;
 	min-height: 400px;
 }
@@ -61,7 +61,18 @@ span.mcserver {
 </style>
 <body>
 <div class="w3-top">
-  <div class="w3-bar" id="myNavbar"> <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onClick="toggleFunction()" title="Toggle Navigation Menu"> <i class="fa fa-bars"></i> </a> <a href="main.html" class="w3-bar-item w3-button">HOME</a> <a href="main.html#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a> <a href="skill.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> Skill</a> <a href="portfolio_main.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a> <a href="media_archive.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Media Archive</a> <a href="other_archive.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Other Archive</a> <a href="main.html#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a> </div>
+  <div class="w3-bar" id="myNavbar">
+  <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onClick="toggleFunction()" title="Toggle Navigation Menu"> 
+  <i class="fa fa-bars"></i> </a>
+  <a href="portfolio_main.html#" class="w3-bar-item w3-button">HOME</a>
+  <a href="portfolio_main.html#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i>ABOUT</a>
+  <a href="portfolio_main.html#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+  <a href="portfolio_main.html#duty" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> DUTY</a>
+  <a href="portfolio_main.html#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+  <a href="skill.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> SKILL</a>
+  <a href="media_archive.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Media Archive</a>
+  <a href="other_archive.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Other Archive</a>
+  </div>
   <!-- Navbar (sit on top) -->
   
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium"> <a href="main.html#about" class="w3-bar-item w3-button" onClick="toggleFunction()">ABOUT</a> <a href="#skill" class="w3-bar-item w3-button" onClick="toggleFunction()">Skill</a> <a href="portfolio_main.html" class="w3-bar-item w3-button" onClick="toggleFunction()">PORTFOLIO</a> <a href="media_archive.html" class="w3-bar-item w3-button" onClick="toggleFunction()">Media Archive</a> <a href="other_archive.html" class="w3-bar-item w3-button" onClick="toggleFunction()">Other Archive</a> <a href="main.html#contact" class="w3-bar-item w3-button" onClick="toggleFunction()">CONTACT</a> </div>
@@ -181,43 +192,42 @@ Minimum Viable Product )。</h5></h5>
 			<h4 class=" w3-center w3-myfont">  <b> 一) 「集卡、卡片現化」</b>​</h4>
 			<br>
 			<h5 class="  w3-myfont">
-			<h5 class="  w3-myfont"> ● </h5>
-			<h5 class=" w3-myfont"> ●　</h5>
-			<h5 class="  w3-myfont"> ●  </h5>
-			
+			<h5 class="  w3-myfont"> ● 里程碑［十一］所屬</h5>
+			<h5 class=" w3-myfont"> ●玩家可以在戰鬥過程獲得卡片，並將其現化成不同道具。</h5>
+			<h5 class="  w3-myfont"> ●  卡片會進入集卡冊（二），等待玩家現化卡片。</h5>
+			<h5 class="  w3-myfont"> ●  玩家共有八類卡片現化，包括所有特殊類卡片。金錢、道具、衣服、住屋、寵物、技能、活動、經驗提升卡片。</h5>
 			<br>
 			
-			<p><b><i class="fa fa-user w3-margin-right"></i>干預劇情物品(其一例子)</b></p>
-			<img src="pictures\portfolio_sub_page\project_2\fyp_waitowel.png" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="劇情物品(其一例子)" width="600" height="500">
+			<p><b><i class="fa fa-user w3-margin-right"></i>「集卡、卡片現化」(其一例子)</b></p>
+			<img src="pictures\portfolio_sub_page\project_2\fyp_waitowel.png" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="「集卡、卡片現化」(其一例子)" width="600" height="500">
 				<br>
 		</div>
 		
 		<div class="w3-col s4 w3-hide-small w3-padding-large">	
-			<h4 class="w3-center w3-myfont">    <b> 二) 「漸進難度的關卡」</b></h4>
+			<h4 class="w3-center w3-myfont">    <b> 二) 「集卡冊」</b></h4>
 			<br>	<h5 class="  w3-myfont">
-			<h5 class="  w3-myfont"> ● </h5>
-			<h5 class=" w3-myfont"> ● </h5>
-			<h5 class="  w3-myfont"> ●  </h5>
-			
+			<h5 class="  w3-myfont"> ● 里程碑［二十七］所屬 </h5>
+			<h5 class=" w3-myfont"> ●進入集卡冊的卡片，可以直接按下卡片圖案／使用快捷鍵現化有關卡片；前提是要有現化匙。</h5>
+			<h5 class="  w3-myfont"> ●  玩家共有八類卡片現化，包括所有特殊類卡片。金錢、道具、衣服、住屋、寵物、技能、活動、經驗提升卡片。</h5>
 			<br>
 			
-			<p><b><i class="fa fa-user w3-margin-right"></i> 紙條(其一例子)</b></p>
-			<img src="pictures\portfolio_sub_page\project_2\fyp_misschanpaper.png" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="紙條(其一例子)" width="600" height="500">
+			<p><b><i class="fa fa-user w3-margin-right"></i> 「集卡冊」(其一例子)</b></p>
+			<img src="pictures\portfolio_sub_page\project_2\fyp_misschanpaper.png" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="「集卡冊」(其一例子)" width="600" height="500">
 						<br>
 	
 		</div>
 
 		<div class="w3-col s4 w3-hide-small w3-padding-large">	
-				<h4 class="w3-center w3-myfont">    <b> 三) 「販賣戰利品，及道具系統」</b></h4>
+				<h4 class="w3-center w3-myfont">    <b> 三) 「漸進關卡的難度」</b></h4>
 			<br>
-			<h5 class="  w3-myfont"> ●  </h5>
-			<h5 class=" w3-myfont"> ● </h5>
-			<h5 class="  w3-myfont"> ●  </h5>
+			<h5 class="  w3-myfont"> ● 里程碑［十七］所屬 </h5>
+			<h5 class=" w3-myfont"> ● 漸進關卡的難度令遊戲更具挑戰性，而怪物及所以會影響難度的參數都會修改。</h5>
+			<h5 class="  w3-myfont"> ● 漸進難度經過作者親手去平衡難度，可以放心，不會過難。</h5>
 	
 			<br>
 	
-			<p><b><i class="fa fa-user w3-margin-right"></i> 小遊戲 (截圖一)</b></p>
-			<img src="pictures\portfolio_sub_page\project_2\fyp_minigame.png" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="小遊戲 (截圖一)" width="600" height="500">
+			<p><b><i class="fa fa-user w3-margin-right"></i> 「漸進關卡的難度」 (截圖一)</b></p>
+			<img src="pictures\portfolio_sub_page\project_2\fyp_minigame.png" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="「漸進關卡的難度」 (截圖一)" width="600" height="500">
 				<br>
 
 		</div>
@@ -226,35 +236,48 @@ Minimum Viable Product )。</h5></h5>
 	</div> 
 	<div class="w3-row">
 		<div class="w3-col s4 w3-hide-small w3-padding-large">
-			<h4 class=" w3-center w3-myfont">  <b> 四) 「近戰攻擊」</b>​</h4>
+			<h4 class=" w3-center w3-myfont">  <b> 四) 「販賣戰利品，及道具系統」</b>​</h4>
 			<br>
 			<h5 class="  w3-myfont">
-			<h5 class="  w3-myfont"> ● </h5>
-			<h5 class=" w3-myfont"> ●　</h5>
-			<h5 class="  w3-myfont"> ●  </h5>
+			<h5 class="  w3-myfont"> ● 里程碑［十一］、［二十七］共同所屬 </h5>
+			<h5 class=" w3-myfont"> ●　玩家可以將寶石卡片現化成寶石；現在寶石介面已經大幅刪減簡化。在前台只會顯示玩家擁有的總量。而後台有不同種類的寶石，不同售價。</h5>
+			<h5 class="  w3-myfont"> ● 之後的里程碑將會更深入製作寶石能力等道具系統。（敬請期待）</h5>
 			
 			<br>
 			
-			<p><b><i class="fa fa-user w3-margin-right"></i>干預劇情物品(其一例子)</b></p>
-			<img src="pictures\portfolio_sub_page\project_2\fyp_waitowel.png" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="劇情物品(其一例子)" width="600" height="500">
+			<p><b><i class="fa fa-user w3-margin-right"></i>「販賣戰利品，及道具系統」(其一例子)</b></p>
+			<img src="pictures\portfolio_sub_page\project_2\fyp_waitowel.png" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="「販賣戰利品，及道具系統」(其一例子)" width="600" height="500">
 				<br>
 		</div>
 		
 		<div class="w3-col s4 w3-hide-small w3-padding-large">	
-			<h4 class="w3-center w3-myfont">    <b> 五) 「全屏攻擊」</b></h4>
+			<h4 class="w3-center w3-myfont">    <b> 五) 「近戰攻擊」</b></h4>
 			<br>	<h5 class="  w3-myfont">
-			<h5 class="  w3-myfont"> ● </h5>
-			<h5 class=" w3-myfont"> ● </h5>
-			<h5 class="  w3-myfont"> ●  </h5>
+			<h5 class="  w3-myfont"> ● 里程碑［二十二］所屬 </h5>
+			<h5 class=" w3-myfont"> ● 是本作一個象徵之一，是多款同類遊戲都沒有的玩法。</h5>
+			<h5 class="  w3-myfont"> ● 使用技能將自己的戰機轉成近戰模式攻擊敵機，而自己不受傷害。 </h5>
 			
 			<br>
 			
-			<p><b><i class="fa fa-user w3-margin-right"></i> 紙條(其一例子)</b></p>
-			<img src="pictures\portfolio_sub_page\project_2\fyp_misschanpaper.png" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="紙條(其一例子)" width="600" height="500">
+			<p><b><i class="fa fa-user w3-margin-right"></i> 「近戰攻擊」(其一例子)</b></p>
+			<img src="pictures\portfolio_sub_page\project_2\fyp_misschanpaper.png" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="「近戰攻擊」(其一例子)" width="600" height="500">
 						<br>
 	
 		</div>
-
+		<div class="w3-col s4 w3-hide-small w3-padding-large">	
+			<h4 class="w3-center w3-myfont">    <b> 五) 「全屏攻擊」</b></h4>
+			<br>	<h5 class="  w3-myfont">
+			<h5 class="  w3-myfont">  ● 里程碑［三十］所屬 </h5>
+			<h5 class=" w3-myfont"> ● 是本作一個象徵之一，是多款同類遊戲都沒有的玩法。</h5>
+			<h5 class="  w3-myfont"> ● 使用技能召喚隕石及其他全屏攻擊；自己施放的技能，並不會波及到自己。 </h5>
+			
+			<br>
+			
+			<p><b><i class="fa fa-user w3-margin-right"></i> 「全屏攻擊」(其一例子)</b></p>
+			<img src="pictures\portfolio_sub_page\project_2\fyp_misschanpaper.png" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="「全屏攻擊」(其一例子)" width="600" height="500">
+						<br>
+	
+		</div>
 
 	<hr>
 	
@@ -262,41 +285,57 @@ Minimum Viable Product )。</h5></h5>
 	<hr>
 
 	
-   	<h4 class="w3-center w3-myfont">【說明——教學指引】 (Tutorial and Storyline planning)</h4>
+   	<h4 class="w3-center w3-myfont">【介面說明——操作教學指引】 (Tutorial and Keymapping)</h4>
 	<h5 class="w3-center w3-myfont">  ●  <br></h5>
 
 		<div class="w3-row">
 			<div class="w3-half w3-center w3-hide-small w3-padding-large">
-			<h4 class=" w3-center w3-myfont">  <b> 一) 「操作說明 及 玩家資訊」</b>​</h4>
+			<h4 class=" w3-center w3-myfont">  <b> 一) 「介面說明 及 玩家資訊」</b>​</h4>
 			<br>
-			<h5 class="  w3-myfont"> ●  </h5>
-			<h5 class="  w3-myfont"> ●  </h5>
-			<h5 class="  w3-myfont"> ●  </h5>
-			
+			<h5 class="  w3-myfont"> ● A區：玩家生命（紅）及經驗等級值（綠）；及集卡冊按鈕 </h5>
+			<h5 class="  w3-myfont"> ● B區：玩家金錢餘額；技能冷卻／持續時間；寵物等級／攻擊資訊 </h5>
+			<h5 class="  w3-myfont"> ● C區：玩家擁有的現化匙數量；敵方餘下血量 </h5>
+			<h5 class="  w3-myfont"> ● D區：玩家回血（Ｏ鍵）／幸運（Ｐ鍵）物品餘下量 </h5>
 			<br>
 			
-			<p><b><i class="fa fa-user w3-margin-right"></i>操作說明 (不可跳過)</b></p>
-			<img src="pictures\portfolio_sub_page\project_2\fyp_tutoral.png" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="劇情物品(其一例子)" width="600" height="500">
-	
+			</div>
+			<div class="w3-half w3-center w3-hide-small w3-padding-large">
+				<p><b><i class="fa fa-user w3-margin-right"></i>完整介面 </b></p>
+				<img src="pictures\portfolio_sub_page\project_2\fyp_tutoral.png" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="完整介面" width="600" height="500">
+			</div>
 		</div>
 		
 		<div class="w3-half w3-center w3-hide-small w3-padding-large">	
 
-			<p><b><i class="fa fa-user w3-margin-right"></i> 劇情說明(其一例子)</b></p>
-			<img src="pictures\portfolio_sub_page\project_2\fyp_dialog2.png" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="劇情說明(其一例子)" width="600" height="500">
+			<p><b><i class="fa fa-user w3-margin-right"></i> A區介面</b></p>
+			<img src="pictures\portfolio_sub_page\project_2\fyp_dialog2.png" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="A區介面" width="600" height="500">
 			
 			<br>
 			
-			<p><b><i class="fa fa-user w3-margin-right"></i> 劇情說明(其一例子)</b></p>
-			<img src="pictures\portfolio_sub_page\project_2\fyp_dialog2.png" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="劇情說明(其一例子)" width="600" height="500">
+			<p><b><i class="fa fa-user w3-margin-right"></i> B區介面</b></p>
+			<img src="pictures\portfolio_sub_page\project_2\fyp_dialog2.png" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="B區介面" width="600" height="500">
 			
 	
 		</div>
 	
+			<div class="w3-half w3-center w3-hide-small w3-padding-large">	
+
+			<p><b><i class="fa fa-user w3-margin-right"></i> C區介面</b></p>
+			<img src="pictures\portfolio_sub_page\project_2\fyp_dialog2.png" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="B區介面" width="600" height="500">
+			
+			<br>
+			
+			<p><b><i class="fa fa-user w3-margin-right"></i> D區介面</b></p>
+			<img src="pictures\portfolio_sub_page\project_2\fyp_dialog2.png" onclick="onClick(this)" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="B區介面" width="600" height="500">
+			
 	
+		</div>
+		</div> 
 		</div> 
 		<div class="w3-row">
-				<h4 class="w3-center w3-myfont">    <b> 二) 「漸進難度的關卡」</b></h4>
+		   <br>
+   <hr>
+				<h4 class="w3-center w3-myfont">    <b> 二) 「操作說明」</b></h4>
 			<br>
 			<h5 class="w3-center  w3-myfont"> ●  </h5>
 			<h5 class="w3-center   w3-myfont"> ●  </h5>
@@ -313,18 +352,50 @@ Minimum Viable Product )。</h5></h5>
 	   <hr>
 
 	<h4 class="w3-center w3-myfont">【發行方法】</h4>
-	<h5 class="  w3-myfont"> ●  </h5>
-
-	<br>
+	<h5 class="  w3-myfont"> ● 作者 GitHub 下載作品 </h5>
+	<h5 class="  w3-myfont"> ● 作者 Youtube Channel </h5>
+	<h5 class="  w3-myfont"> ● 所有已批准作者提出宣傳版務的論壇 </h5>
+	<h5 class="  w3-myfont"> ● 第三者分享的任何合法，專重應有版權的渠道 </h5>
 	
+	<br>
+	   <hr>
+	   
 	<h4 class="w3-center w3-myfont">【專案發行效益／益助】</h4>
-	<h5 class="  w3-myfont"> ●  </h5>
 	
+	
+	
+	 <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-myfont">
+<h5 class="w3-center  w3-myfont">  數值截至 2019 年 5 月 </h5>
+  <div class="w3-quarter w3-section"> <span class="w3-xlarge">____ K+</span><br>
+    Youtube Channel 觀看次數<br>
+    Youtube Channel Unique Visitors</div>
+    <div class="w3-quarter w3-section"> <span class="w3-xlarge">____ </span><br>
+    Youtube Channel <br>帶來的喜歡／回應<br>
+    Youtube Channel Likes, Comments </div>
+    <div class="w3-quarter w3-section"> <span class="w3-xlarge">____ </span><br>
+    論壇宣傳帶來的流量 (觀看次數)*<br>
+    Fourm Visitors*</div>
+	<div class="w3-quarter w3-section"> <span class="w3-xlarge">____ </span><br>
+    GitHub帶來的流量 (觀看次數)*<br>
+    Fourm Visitors*</div>
 	<br>
+	* Data obtained by big data analysis tools.
+</div>
+
+
+	
+<div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-myfont">
+  <div class="w3-half w3-section"> <span class="w3-xlarge"> HKD $ ____ </span><br>
+    專案帶來的收益／支助額<br>
+    Received Sponsor from Youtube / 3rd platform (steamlab...etc).
+  </div>    
+</div>
+<br>
+
 
 </div>
-	
-	
+
+
   <div class="w3-row w3-center w3-dark-grey w3-padding-16">
 	<div class="w3-third w3-section w3-myfont"> <span class="w3-large">
 	    <br>
