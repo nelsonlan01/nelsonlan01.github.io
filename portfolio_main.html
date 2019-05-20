@@ -15,48 +15,52 @@ body, html {
 	line-height: 1.8;
 }
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8 {
+.indexpic-1, .projpic-0,.projpic-1, .projpic-2, .projpic-3, .projpic-4, .projpic-5, .projpic-6, .projpic-7, .projpic-8 {
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.bgimg-0 {
+.indexpic-1 {
+	background-image: url("g.png");
+	min-height: 100%;
+}
+.projpic-0 {
 	background-image: url("minecraft_server_gate.png");
 	min-height: 100%;
 }
 /* First image (Logo. Full height) */
-.bgimg-1 {
+.projpic-1 {
 	background-image: url("minecraft_server_gate.png");
 	min-height: 100%;
 }
 /* Second image (Portfolio) */
-.bgimg-2 {
+.projpic-2 {
 	background-image: url("pictures/main_page/main_project_1.png");
 	min-height: 100%;
 }
 /* Third image (Contact) */
-.bgimg-3 {
+.projpic-3 {
 	background-image: url("pictures/main_page/main_project_2.png");
 	min-height: 100%;
 }
-.bgimg-4 {
+.projpic-4 {
 	background-image: url("pictures/main_page/main_project_3.png");
 	min-height: 100%;
 }
-.bgimg-5 {
+.projpic-5 {
 	background-image: url("pictures/main_page/main_project_4_6.png");
 	min-height: 100%;
 }
-.bgimg-6 {
+.projpic-6 {
 	background-image: url("pictures/main_page/main_project_7.png");
 	min-height: 100%;
 }
-.bgimg-7 {
+.projpic-7 {
 	background-image: url("pictures/main_page/main_project_12.png");
 	min-height: 100%;
 }
-.bgimg-8 {
+.projpic-8 {
 	background-image: url("pictures/main_page/main_project_x.png");
 	min-height: 100%;
 }
@@ -69,7 +73,7 @@ body, html {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8 {
+.indexpic-1, .projpic-1, .projpic-2, .projpic-3, .projpic-4, .projpic-5, .projpic-6, .projpic-7, .projpic-8 {
 	background-attachment: scroll;
 	min-height: 400px;
 }
@@ -108,20 +112,66 @@ span.mcserver {
 </style>
 <body>
 <div class="w3-top">
-  <div class="w3-bar" id="myNavbar"> <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onClick="toggleFunction()" title="Toggle Navigation Menu"> <i class="fa fa-bars"></i> </a> <a href="main.html" class="w3-bar-item w3-button">HOME</a> <a href="main.html#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a> <a href="skill.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> Skill</a> <a href="portfolio_main.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a> <a href="media_archive.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Media Archive</a> <a href="other_archive.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Other Archive</a> <a href="main.html#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a> </div>
+  <div class="w3-bar" id="myNavbar">
+  <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onClick="toggleFunction()" title="Toggle Navigation Menu"> 
+  <i class="fa fa-bars"></i> </a>
+  <a href="#" class="w3-bar-item w3-button">HOME</a>
+  <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i>ABOUT</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+  <a href="#duty" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> DUTY</a>
+  <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+  <a href="skill.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> SKILL</a>
+  <a href="media_archive.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Media Archive</a>
+  <a href="other_archive.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Other Archive</a>
+  </div>
   <!-- Navbar (sit on top) -->
   
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium"> <a href="main.html#about" class="w3-bar-item w3-button" onClick="toggleFunction()">ABOUT</a> <a href="#skill" class="w3-bar-item w3-button" onClick="toggleFunction()">Skill</a> <a href="portfolio_main.html" class="w3-bar-item w3-button" onClick="toggleFunction()">PORTFOLIO</a> <a href="media_archive.html" class="w3-bar-item w3-button" onClick="toggleFunction()">Media Archive</a> <a href="other_archive.html" class="w3-bar-item w3-button" onClick="toggleFunction()">Other Archive</a> <a href="main.html#contact" class="w3-bar-item w3-button" onClick="toggleFunction()">CONTACT</a> </div>
 
   
   </div>
-  	<br>
-	<hr>
-<div class="bgimg-0 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;"> <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">PORTFOLIO <span class="w3-hide-small">MAIN</span> PAGE</span> </div>
-</div>
-<!-- Logo Text --> 
 
+	
+
+
+</div>	
+	
+<div class="projpic-0 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;"> <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">123 </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="about">
+	<h3 class="w3-center w3-myfont">About me</h3>
+	<p class="w3-center w3-myfont">自我介紹</p>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="contact">
+	<h3 class="w3-center w3-myfont">Contact</h3>
+	<p class="w3-center w3-myfont">聯絡方法</p>
+
+	<div class="w3-col m8 w3-panel">
+			<div class="w3-large w3-margin-bottom">
+				<i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone : +852 61711483 <br>
+				<i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email : nelsonlan199601@gmail.com <br>
+				<i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Youtube : nelsonlan <br>
+				<i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email : nelsonlan199601@gmail.com <br>
+				
+    		</div>
+	</div>
+</div>
+
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16 ">
+  <div class=" w3-section w3-myfont"> 
+	<span class="w3-xlarge"></span>
+	<br>
+  </div>
+</div>
+
+<!-- Logo Text --> 
+<div class="projpic-0 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;"> <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">PORTFOLIO </div>
+</div>
 <!-- Logo Text --> 
 
 <!-- Container (About Section) -->
@@ -145,19 +195,19 @@ span.mcserver {
 <!-- Navbar on small screens -->
 	<br>
 	<hr>
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+<div class="projpic-1 w3-display-container w3-opacity-min" >
  
 </div>
 
 
     <hr>
-		<div class=" w3-container w3-padding-64 w3-myfont w3-center" id="about">
+		<div class=" w3-container w3-padding-64 w3-myfont w3-center" id="duty">
 			<h4 class=" w3-myfont"> 【　職權一覽　/　Job Duties　】</h4>
 			<h5 class=" w3-myfont"> 下面三個表格會指出以往在專案，我是主／非主責（受任）於那些崗位上及職權範圍。如有其他第三者關係，都會在表格上有所註明。</h5>
 			<h5 class=" w3-myfont"> There are three charts at the rest of this page, the chart illustrate how I affiliate in different roles of the project. There indicated a comment on the chart, if there have any engaged from/with any 3rd party personals, if acceptable.</h5>
 		</div>
     <hr>
-	<div class=" w3-container w3-padding-32 " id="portfolio">
+	<div class=" w3-container w3-padding-32 " id="">
 		<table id="duty_senior" align="center">
 		 <h3 class="w3-center  w3-myfont">較高級 或 需顧及更廣範的職權 <br> Senior & more resourcefulness position</h3>
 		<tr>
@@ -329,7 +379,7 @@ span.mcserver {
 </div>
 <!-- about me what+ --> 
 <hr>	<br>
-<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+<div class="w3-row w3-center w3-dark-grey w3-padding-16" id = "portfolio">
 	 <div class=" w3-section"> <span class="w3-xlarge"></span><br><br><br></div>
 </div>
 
@@ -337,7 +387,7 @@ span.mcserver {
 
 
 <!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min  w3-myfont  "></div>
+<div class="projpic-2 w3-display-container w3-opacity-min  w3-myfont" id ="portfolio"></div>
  
 <div class="w3-row w3-center w3-dark-grey w3-padding-16 ">
   <div class=" w3-section w3-myfont"> 
@@ -354,7 +404,7 @@ span.mcserver {
 
 
 <!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min  w3-myfont w3-grayscale-max"></div>
+<div class="projpic-3 w3-display-container w3-opacity-min  w3-myfont w3-grayscale-max"></div>
  
 <div class="w3-row w3-center w3-dark-grey w3-padding-16">
   <div class=" w3-section w3-myfont"> 
@@ -370,7 +420,7 @@ span.mcserver {
 
 			
 <!-- 4th Parallax Image with Portfolio Text -->
-<div class="bgimg-4 w3-display-container w3-opacity-min  w3-myfont  "></div>
+<div class="projpic-4 w3-display-container w3-opacity-min  w3-myfont  "></div>
  
 <div class="w3-row w3-center w3-dark-grey w3-padding-16 ">
   <div class=" w3-section w3-myfont"> 
@@ -387,7 +437,7 @@ Archetype Game for Remembrance
 	
 			
 <!-- 5th Parallax Image with Portfolio Text -->
-<div class="bgimg-5 w3-display-container w3-opacity-min  w3-myfont"></div>
+<div class="projpic-5 w3-display-container w3-opacity-min  w3-myfont"></div>
  
 <div class="w3-row w3-center w3-dark-grey w3-padding-16">
   <div class=" w3-section w3-myfont"> 
@@ -405,7 +455,7 @@ Archetype Game for Remembrance
 			
 
 <!-- 6th Parallax Image with Portfolio Text -->
-<div class="bgimg-6 w3-display-container w3-opacity-min  w3-myfont"></div>
+<div class="projpic-6 w3-display-container w3-opacity-min  w3-myfont"></div>
  
 <div class="w3-row w3-center w3-dark-grey w3-padding-16">
   <div class=" w3-section w3-myfont"> 
@@ -420,7 +470,7 @@ Archetype Game for Remembrance
 
 
 <!-- 7th Parallax Image with Portfolio Text -->
-<div class="bgimg-0 w3-display-container w3-opacity-min  w3-myfont"></div>
+<div class="projpic-0 w3-display-container w3-opacity-min  w3-myfont"></div>
  
 <div class="w3-row w3-center w3-dark-grey w3-padding-16">
   <div class=" w3-section w3-myfont"> 
@@ -436,7 +486,7 @@ Archetype Game for Remembrance
 
 
 
-<div class="bgimg-7 w3-display-container w3-opacity-min  w3-myfont"></div>
+<div class="projpic-7 w3-display-container w3-opacity-min  w3-myfont"></div>
  
 <div class="w3-row w3-center w3-dark-grey w3-padding-16">
   <div class=" w3-section w3-myfont"> 
