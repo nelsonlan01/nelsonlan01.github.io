@@ -5,6 +5,24 @@
 		<link rel="stylesheet" href="assets/css/Gallery.css" />
 
 <style>
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 body, h1, h2, h3, h4, h5, h6 {
 	font-family: "Lato", sans-serif;
 }
@@ -110,26 +128,29 @@ span.mcserver {
 	  <p><b><i class="fa fa-user w3-margin-right"></i>Milestone (in Video Format)</b></p>
       <br>
       <br>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL9zygzz0hZalVlwxz9AsujtsrcMJpAP6S" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
+		<div class="container"> 
+			<iframe class="responsive-iframe" src="https://www.youtube.com/embed/videoseries?list=PL9zygzz0hZalVlwxz9AsujtsrcMJpAP6S"></iframe>
+		</div>
+      <!--<iframe width="560" height="315" src=" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>--->
+	</div>
   
   <!----------Photo column--------------->
   <!----------Text  column--------------->
-  <div class="w3-col m6 w3-hide-small w3-padding-large">
-	<h4 class=" w3-myfont">【本作目的/目標】</h4>
-	<h5 class="  w3-myfont"> ●　本作制作的目的是想以模仿致敬方式，重構原遊戲的一小部分，作回憶錄。</h5>
-	<h5 class=" w3-myfont"> ●　 一小部分意思只是指，把飛行、卡片收集兩項，提取精要部分後；改編製成一個場景(Screen)的最簡可行產品 (Minimum Viable Product )。</h5>
-	<h5 class="  w3-myfont"> ●　這也是一個有力證據，證明自己能勝任遊戲企劃、設計、開發、美術、測試員多跨技能職位，大可放心錄用。</h5>
-	<br>
-	<h4 class="w3-center  w3-myfont">【中文聲明、媒體來源】</h4>
-	<h5 class=" w3-myfont"> ● 「致敬」一詞 ，指「刻意採用之前作品」中的「相同要素」，來表示對其「貢獻」的敬意。本人絕無意圖抄襲。</h5>
-	<h5 class=" w3-myfont">
-	● 媒體、圖片來源來自Google Creative Common Search、觀眾提供之截圖，屬 Creative Common「公平使用守則」搜尋獲得，或觀眾授權使用。而本專案發佈後，用戶可自行改編屬自己的(同人)版本；惟只可透過本文案第二章定明：「任何衍生作均不可圖利或作商業用途」。</h5>
-	</h5>
-	<br>
-  </div> 
+	<div class="w3-col m6 w3-padding-large">
+		<h4 class=" w3-myfont">【本作目的/目標】</h4>
+		<h5 class="  w3-myfont"> ●　本作制作的目的是想以模仿致敬方式，重構原遊戲的一小部分，作回憶錄。</h5>
+		<h5 class=" w3-myfont"> ●　 一小部分意思只是指，把飛行、卡片收集兩項，提取精要部分後；改編製成一個場景(Screen)的最簡可行產品 (Minimum Viable Product )。</h5>
+		<h5 class="  w3-myfont"> ●　這也是一個有力證據，證明自己能勝任遊戲企劃、設計、開發、美術、測試員多跨技能職位。</h5>
+		<br>
+		<h4 class="w3-center  w3-myfont">【中文聲明、媒體來源】</h4>
+		<h5 class=" w3-myfont"> ● 「致敬」一詞 ，指「刻意採用之前作品」中的「相同要素」，來表示對其「貢獻」的敬意。本人絕無意圖抄襲。</h5>
+		<h5 class=" w3-myfont">
+			● 媒體、圖片來源來自Google Creative Common Search、觀眾提供之截圖，屬 Creative Common「公平使用守則」搜尋獲得，或觀眾授權使用。而本專案發佈後，用戶可自行改編屬自己的(同人)版本；惟只可透過本文案第二章定明：「任何衍生作均不可圖利或作商業用途」。</h5>
+		</h5>
+		<br>
+	</div> 
   <!----------Text  column--------------->
-<br>
+	<br>
   </div> 
   
   
@@ -163,11 +184,11 @@ span.mcserver {
   <!----------Text  column--------------->
  <div class="w3-row">
 
- <div class="w3-col m6 w3-hide-small w3-padding-large">
+ <div class="w3-col m6  w3-padding-large">
 	<h4 class="w3-center  w3-myfont">【本作目的/目標】</h4>
 	<h5 class="w3-center  w3-myfont"> ●　本作制作的目的是想令到作品集更多元化，及可以用於裝備未來，在職涯上鋪路。</h5>
 	<h5 class="w3-center  w3-myfont"> ●　當然制作的初心除為了裝備自己、更是好讓自己持續學習。</h5>
-	<h5 class="w3-center  w3-myfont"> ●　這也是一個有力證據，證明自己能勝任3D遊戲美術員一職，大可放心錄用。</h5>
+	<h5 class="w3-center  w3-myfont"> ●　這也是一個有力證據，證明自己能勝任3D遊戲美術員一職。</h5>
 	<br>
   </div>  
   
@@ -176,9 +197,13 @@ span.mcserver {
       <p><b><i class="fa fa-user w3-margin-right"></i>影片形式里程碑</b></p>
 	  <p><b><i class="fa fa-user w3-margin-right"></i>Milestone (in Video Format)</b></p>
       <br>
-	  <iframe width="560" height="315"  src="https://www.youtube.com/embed/videoseries?list=PL9zygzz0hZamvHYyIsMWIPfevazIh0HOU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <br><br>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL9zygzz0hZakAqHXXmfc5nTGeSJ5uq4_i" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div class="container"> 
+			<iframe class="responsive-iframe" src="https://www.youtube.com/embed/videoseries?list=PL9zygzz0hZamvHYyIsMWIPfevazIh0HOU"></iframe>
+		</div> 
+		<br><br>
+		<div class="container"> 
+			<iframe class="responsive-iframe" src="https://www.youtube.com/embed/videoseries?list=PL9zygzz0hZakAqHXXmfc5nTGeSJ5uq4_i"></iframe>
+		</div>
        <br>
     </div>
   </div>  
@@ -213,15 +238,18 @@ span.mcserver {
       <p><b><i class="fa fa-user w3-margin-right"></i>影片形式里程碑</b></p>
 	  <p><b><i class="fa fa-user w3-margin-right"></i>Milestone (in Video Format)</b></p>
       <br>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL9zygzz0hZanmh92RxQx7-KHFNl_cQGpp" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	  
+	  <div class="container"> 
+			<iframe class="responsive-iframe" src="https://www.youtube.com/embed/videoseries?list=PL9zygzz0hZanmh92RxQx7-KHFNl_cQGpp"></iframe>
+	  </div>
   </div>
   <!----------Photo column--------------->
   <!----------Text  column--------------->
-  <div class="w3-col m6 w3-hide-small w3-padding-large">
+  <div class="w3-col m6 w3-padding-large">
   
     <h4 class="w3-center  w3-myfont">【本作目的/目標】</h4>
   <h5 class="w3-center  w3-myfont"> ●　本作制作的目的亦是想令到作品集更多元化。</h5>
-  <h5 class="w3-center  w3-myfont"> ●　這也是一個有力證據，證明自己能勝任平面設計等職位，大可放心錄用。</h5>
+  <h5 class="w3-center  w3-myfont"> ●　這也是一個有力證據，證明自己能勝任平面設計等職位。</h5>
   <br>
   <h4 class="w3-center  w3-myfont">【製作原理／原念】</h4>
   <h5 class="w3-center  w3-myfont"> ● 靈感啟發自「日本JR報站圖」，然後加以修改原創一下。</h5>　
@@ -262,7 +290,7 @@ span.mcserver {
    <h4 class="w3-center  w3-myfont">【製作原理／原念】</h4>
   <h5 class="w3-center  w3-myfont"> ●　此系列的作品題材主要選自其他遊戲的物品，並嘗試以自己已經集得的技能去重新由０開始製作出來。</h5>
   <h5 class="w3-center  w3-myfont"> ●　此系列沒有任何的主使性質；而訓練耐性、細心、空間智能才是這一個系列困難所在，如何去慢慢克服才是帶出的重點。</h5>
-　<h5 class="w3-center  w3-myfont"> ●　最終，這也是一個有力證據，證明自己能勝任3D遊戲美術員一職，大可放心錄用。</h5>　
+　<h5 class="w3-center  w3-myfont"> ●　最終，這也是一個有力證據，證明自己能勝任3D遊戲美術員一職。</h5>　
 　<br>
   <h4 class="w3-center  w3-myfont">【困難之處】</h4>
   <h5 class="w3-center  w3-myfont"> ●　困難所在是限制自己以截圖／影片某時間點截圖，是二維的；你要按它的比例、尺寸、厚薄、形狀都要拿捏得很好。在腦海把多張二維圖推演、拼合、旋轉位移，記下草圖，再下手製作三維模組。這令製作路上行，走得更平坦更廣闊。</h5>
@@ -274,14 +302,22 @@ span.mcserver {
       <p><b><i class="fa fa-user w3-margin-right"></i>影片形式里程碑</b></p>
 	  <p><b><i class="fa fa-user w3-margin-right"></i>Milestone (in Video Format)</b></p>
       <br>
-	  <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL9zygzz0hZak_yvBwxmTe0CP16qTY24CM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+	  <div class="container"> 
+			<iframe class="responsive-iframe" src="https://www.youtube.com/embed/videoseries?list=PL9zygzz0hZak_yvBwxmTe0CP16qTY24CM"></iframe>
+	  </div>
+	 
 <br>
   </div>
     </div>  
 
 <br>
-<br>
+<br> 
+<div class="w3-center">
 <a href="other_archive.html#mhw_meat_burner" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+  </div>
+  <br>
+<br> 
   <hr>
 <br>
 
