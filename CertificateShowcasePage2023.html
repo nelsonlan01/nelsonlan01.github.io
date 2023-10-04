@@ -1,0 +1,443 @@
+<link rel="stylesheet" href="assets\css\w3.css">
+<link rel="stylesheet" href="font.css">
+<link rel="stylesheet" href="assets\css\3dbutton.css" \>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="assets\css\CertificateShowcasePage2023_CSS.css">
+  
+  <title>Nelson LAN 靜態個人介紹網頁 證書頁面</title>
+ 
+
+</head>
+
+<body>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+<link rel="stylesheet" href="w3.css">
+<!--<link rel="stylesheet" href="pictures/skill_page/w3.css">-->
+<link rel="stylesheet" href="font.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+	body,h1,h2,h3,h4,h5,h6 {font-family: "Lato_TC", sans-serif;}
+	body, html {
+	height: 100%;
+	color: #777;
+	line-height: 1.8;
+	}
+	.w3-myfont{
+		font-family: "Lato_TC", normal;
+	}
+	/* Create a Parallax Effect */
+	bgimg-0 ,.bgimg-1, .bgimg-2, .bgimg-3,.bgimg-4,.bgimg-5,.bgimg-6,.bgimg-7,.bgimg-8 {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+
+	/* Skill Sector Main Pic */
+	.bgimg-0 {
+	background-image: url("minecraft_server_gate.png");
+	min-height: 100%;
+	}
+
+	/* GCC2023 */
+	.bgimg-1 {
+	background-image: url("pictures/skill_page/CertificateShowcasePage2023/topic_sep_parts/GCC2023.jpg");
+	min-height: 100%;
+	}
+
+	 
+	/* CJKS */
+	.bgimg-2 {
+	background-image: url("pictures/skill_page/CertificateShowcasePage2023/topic_sep_parts/blend_CJKS.png");
+	min-height: 100%;
+	}
+
+
+	/* SkillCert */
+	.bgimg-3 {
+	background-image: url("pictures/skill_page/CertificateShowcasePage2023/topic_sep_parts/hackrank.png");
+	min-height: 100%;
+	}
+	
+
+	.w3-wide {letter-spacing: 10px;}
+	.w3-hover-opacity {cursor: pointer;}
+
+	/* Turn off parallax scrolling for tablets and phones */
+	@media only screen and (max-device-width: 1600px) {
+	.bgimg-1, .bgimg-2, .bgimg-3,.bgimg-4,.bgimg-5,.bgimg-6 {
+	background-attachment: scroll;
+	min-height: 400px;
+	}
+	.w3-myfont{
+		font-family: "Lato_TC", normal;
+	}
+
+
+	table, th, td {
+	  border: 1px solid black;
+	  border-collapse: collapse;
+	}
+	th, td {
+	  padding: 15px;
+	}
+
+
+</style>
+
+  <div class="w3-top">
+	<div class="w3-bar" id="myNavbar">
+		<a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onClick="toggleFunction()" title="Toggle Navigation Menu"> 
+		<i class="fa fa-bars"></i> </a>
+		<a href="index.html#" class="w3-bar-item w3-button">HOME</a>
+		<a href="index.html#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i>ABOUT</a>
+		<a href="index.html#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+		<a href="index.html#duty" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> DUTY</a>
+		<a href="index.html#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+		<a href="skill.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> SKILL</a>
+		<a href="media_archive.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Media Archive</a>
+		<a href="other_archive.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Other Archive</a>
+	</div>
+
+
+	<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+		<a href="main.html#about" class="w3-bar-item w3-button" onClick="toggleFunction()">ABOUT</a>
+		<a href="#skill" class="w3-bar-item w3-button" onClick="toggleFunction()">Skill</a>
+		<a href="index.html" class="w3-bar-item w3-button" onClick="toggleFunction()">PORTFOLIO</a>
+		<a href="media_archive.html" class="w3-bar-item w3-button" onClick="toggleFunction()">Media Archive</a>
+		<a href="other_archive.html" class="w3-bar-item w3-button" onClick="toggleFunction()">Other Archive</a>
+		<a href="main.html#contact" class="w3-bar-item w3-button" onClick="toggleFunction()">CONTACT</a>
+	</div>
+	</div><!-- Navbar on small screens -->
+
+<div class="bgimg-0 w3-display-container w3-opacity-min" id="home">
+	<div class="w3-display-middle" style="white-space:nowrap;">
+		<span class="w3-center w3-padding-large w3-black w3-large w3-wide w3-animate-opacity">Certificate Showcase Page </span>
+
+	</div>
+
+</div>
+
+
+
+
+<!-- Logo Text -->
+   <div class="bgimg-1 w3-display-container " id="GCC2023">
+	<div class="w3-display-middle" style="white-space:nowrap;">
+	<!--    
+	<span class="w3-center w3-padding-large w3-black w3-xlarge  w3-animate-opacity">Game Development & <span class="w3-hide-small">3D Modelling / Animation</span> </span>
+    -->
+     
+	</div>
+</div><!-- Logo Text --> 
+<br><br><br><br><br>
+
+<div class="wrapper2">
+
+<b>	<h1>Minor Certificate of Discipline of Learning</h1></b><hr>
+	<div>
+		Google Career Certificates are a suite of flexible online training programs, built and taught by Google, 
+		that are designed to provide learners from all backgrounds with job-ready skills within 6 months. <br><br>
+		「Google Career Certificates 智慧數碼人才計劃」旨在透過一系列靈活的​​網上學習課程，讓來自不同背景的人士，在無需相關經驗的情況下，六個月內培養實用數碼職業技能。<br>
+
+		<br>
+<b>【Self Introduction words】(個人引言)<br></b>
+　　。　Certificates only represent how much effort I put into the Information Technology related field, as a lifelong learner.<br>
+　　。　Enriching gained knowledge, refreshing forgotten, equipping crucial and learning well-timed new things for solving side projects and innovating daily life outside of the workplace.　<br>
+		<br> 
+　　。　證書僅證明、代表本人是一個終身學習者，而投資多少功夫、時間到資訊科技領域之上。<br>
+
+　　。　充實已經獲得的、喚醒已經遺忘的、裝備重要的、和學習與時並進的知識，務求做到推陳出新；在專案中排除困難，或是應用於生活之上、職場之外。		<br>
+<br>
+<b>【Obtained Certificates】(已獲取專業證書課程) <br></b>
+
+　　。　These awards are hereby given to those who completed graded tests and assignments in each course. <br>
+　　。　These certificates are without an expiration date and are globally recognised. <br><br>
+　　。　此證書只會頒受予以下人仕，此證書沒有過期日及在全球承認。條件是完成評分課業及測考。 <br>
+
+	</div>
+		<hr>
+	
+	<div class="container2">
+     <div id="start2"><img src="pictures\skill_page\CertificateShowcasePage2023\GCC2023_TSSFundamentals.png" alt=""></div>
+		
+		<div id="slide5"><img src="pictures\skill_page\CertificateShowcasePage2023\GCC2023_TSSFundamentals.png" alt=""></div>
+		<div id="slide6"><img src="pictures\skill_page\CertificateShowcasePage2023\GCC2023_PMFoundation.png" alt=""></div>
+		<div id="slide7"><img src="pictures\skill_page\CertificateShowcasePage2023\GCC2023_UXFoundation.png" alt=""></div>
+		<div id="slide8"><img src="pictures\skill_page\CertificateShowcasePage2023\GCC2023_Network.png" alt=""></div>
+		<div id="slide9"><img src="pictures\skill_page\CertificateShowcasePage2023\GCC2023_OS.png" alt=""></div>
+  
+		<div style="overflow-y: scroll; height:350px; " class="navigation">
+
+			<li> 
+				<div class="btn"> 
+					<a href="#slide5"><img src="pictures\skill_page\CertificateShowcasePage2023\GCC2023_TSSFundamentals.png" alt=""></a>
+						
+				</div>
+			</li>
+
+			<li>
+				<div class="btn">	
+					<a href="#slide6"><img src="pictures\skill_page\CertificateShowcasePage2023\GCC2023_PMFoundation.png" alt=""></a>
+					
+			   </div>
+		   </li> 
+
+			<li>
+				<div class="btn">
+					<a href="#slide7"><img src="pictures\skill_page\CertificateShowcasePage2023\GCC2023_UXFoundation.png" alt=""></a>
+				</div>
+			</li>
+
+			<li>
+				<div class="btn">	
+					<a href="#slide8"><img src="pictures\skill_page\CertificateShowcasePage2023\GCC2023_Network.png" alt=""></a>
+				</div>
+			</li> 
+
+
+			<li>
+				<div class="btn">	
+					<a href="#slide9"><img src="pictures\skill_page\CertificateShowcasePage2023\GCC2023_OS.png" alt=""></a>
+				</div>
+			</li> 
+
+		</div>
+	</div>  
+  
+</div>
+<br><br><br><br><br>
+<br><br><br><br><br>
+   
+   
+<div class="bgimg-2 w3-display-container " id="CJKS">
+	<div class="w3-display-middle" style="white-space:nowrap;">
+    
+	</div>
+</div><!-- Logo Text -->
+
+   
+<div class="wrapper">
+
+
+	<h1>Certificate of  <br>Progressions and Accomplishments</h1><hr>
+	<div>
+		These awards are hereby given to those who make progress in different ranks and stages, 
+		and who make the VALID  attempt(s) in competition, no matter whether answers are accepted, 
+		conditional (passed sample, sectional accepted), or special cases.  
+		These certificates are without an expiration date and are globally recognised.<br>
+		此證書只會頒受予以下人仕，此證書沒有過期日及在全球承認。
+		條件是在不同決賽梯段有曾作有效呈交，不論給出答案是完全、非完全滿足要求、或為特殊案列。
+
+
+	</div>
+	<hr>
+
+	<div class="container">
+	
+
+	
+     <div id="start" ><img src="pictures\skill_page\CertificateShowcasePage2023\CJ2022.png" alt=""></div>
+		
+		<div id="slide1"><img src="pictures\skill_page\CertificateShowcasePage2023\CJ2022.png" alt=""></div>
+		<div id="slide2"><img src="pictures\skill_page\CertificateShowcasePage2023\CJ2022Q.png" alt=""></div>
+		<div id="slide3"><img src="pictures\skill_page\CertificateShowcasePage2023\Kick Start 2022.png" alt=""></div>
+		<div id="slide4"><img src="pictures\skill_page\CertificateShowcasePage2023\CJ2023.png" alt=""></div>
+
+	
+
+  
+		<div style="overscroll-behavior-y: none;" class="navigation">
+
+			<li> 
+				<div class="btn"> 
+					<a href="#slide1"><img src="pictures\skill_page\CertificateShowcasePage2023\CJ2022.png" alt=""></a>
+				
+				</div>
+			</li>
+
+			<li>
+				<div class="btn">	
+					<a href="#slide2"><img src="pictures\skill_page\CertificateShowcasePage2023\CJ2022Q.png" alt=""></a>
+			
+				</div>
+			</li> 
+
+			<li>
+				<div class="btn">
+					<a href="#slide3"><img src="pictures\skill_page\CertificateShowcasePage2023\Kick Start 2022.png" alt=""></a>
+				</div>
+			</li>
+
+			<li>
+				<div class="btn">
+					<a href="#slide4"><img src="pictures\skill_page\CertificateShowcasePage2023\CJ2023.png" alt=""></a>
+				</div>
+			</li>
+
+		</div>
+	</div>  
+  
+</div>
+
+<br><br><br><br><br>
+
+   </div>
+   
+    <!--------------------------------------------------->
+    <!--------------------------------------------------->
+   <!--------------------------------------------------->
+
+    <!--------------------------------------------------->
+    <!--------------------------------------------------->
+   <!--------------------------------------------------->
+ 
+ 
+ <div class="bgimg-3 w3-display-container " id="SkillCert">
+	<div class="w3-display-middle" style="white-space:nowrap;">
+	<!--    
+	<span class="w3-center w3-padding-large w3-black w3-xlarge  w3-animate-opacity">Game Development & <span class="w3-hide-small">3D Modelling / Animation</span> </span>
+    -->
+     
+	</div>
+</div><!-- Logo Text --> 
+<br><br><br><br><br>
+
+<div class="wrapper3">
+
+	<h1>Certificate of <br>Passing Language Assessment </h1><hr>
+	<div style="white-space:nowrap;">
+		Certifications of Language Assessment are not equal to proficiency in a language but only prove of ability to code / to utilize to make products.
+	</div>
+		<hr>
+	
+	<div class="container3">
+     <div id="start3"><img src="pictures\skill_page\CertificateShowcasePage2023\problem_solving_basic_certificate.png" alt=""></div>
+		
+		<div id="slide37"><img src="pictures\skill_page\CertificateShowcasePage2023\problem_solving_basic_certificate.png" alt=""></div>
+		<div id="slide36"><img src="pictures\skill_page\CertificateShowcasePage2023\problem_solving_intermediate_certificate.png" alt=""></div>
+		<div id="slide35"><img src="pictures\skill_page\CertificateShowcasePage2023\sql_basic_certificate.png" alt=""></div>
+		<div id="slide34"><img src="pictures\skill_page\CertificateShowcasePage2023\sql_intermediate_certificate.png" alt=""></div>
+		<div id="slide33"><img src="pictures\skill_page\CertificateShowcasePage2023\python_basic_certificate.png" alt=""></div>
+  		<div id="slide32"><img src="pictures\skill_page\CertificateShowcasePage2023\c_sharp_basic certificate.png" alt=""></div>
+		<div id="slide31"><img src="pictures\skill_page\CertificateShowcasePage2023\java_basic certificate.png" alt=""></div>
+		
+		<div style="overflow-y: scroll; height:350px; " class="navigation">
+
+			<li> 
+				<div class="btn"> 
+					<a href="#slide37"><img src="pictures\skill_page\CertificateShowcasePage2023\problem_solving_basic_certificate.png" alt=""></a>
+						
+				</div>
+			</li>
+
+			<li>
+				<div class="btn">	
+					<a href="#slide36"><img src="pictures\skill_page\CertificateShowcasePage2023\problem_solving_intermediate_certificate.png" alt=""></a>
+					
+			   </div>
+		   </li> 
+
+			<li>
+				<div class="btn">
+					<a href="#slide35"><img src="pictures\skill_page\CertificateShowcasePage2023\sql_basic_certificate.png" alt=""></a>
+				</div>
+			</li>
+
+			<li>
+				<div class="btn">	
+					<a href="#slide34"><img src="pictures\skill_page\CertificateShowcasePage2023\sql_intermediate_certificate.png" alt=""></a>
+				</div>
+			</li> 
+
+
+			<li>
+				<div class="btn">	
+					<a href="#slide33"><img src="pictures\skill_page\CertificateShowcasePage2023\python_basic_certificate.png" alt=""></a>
+				</div>
+			</li> 
+			
+			<li>
+				<div class="btn">	
+					<a href="#slide32"><img src="pictures\skill_page\CertificateShowcasePage2023\c_sharp_basic certificate.png" alt=""></a>
+				</div>
+			</li> 
+			
+			<li>
+				<div class="btn">	
+					<a href="#slide31"><img src="pictures\skill_page\CertificateShowcasePage2023\java_basic certificate.png" alt=""></a>
+				</div>
+			</li> 
+		</div>
+	</div>  
+  
+</div>
+<br><br><br><br><br>
+<br><br><br><br><br>
+    <!--------------------------------------------------->
+    <!--------------------------------------------------->
+   <!---------------------------------------------------> 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off"> <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section"> <a href="https://drive.google.com/open?id=1x5gO8Dmfox_wXYIrENMOVmvkefmgbh1B"><i class="fa fa-google w3-hover-opacity" style="font-size:36px";></i></a> <a href="https://www.youtube.com/user/bbbgbg"><i class="fa fa-youtube-play w3-hover-opacity" style="font-size:36px";></i></a> <a href="https://github.com/NelsonLAN"><i class="fa fa-github w3-hover-opacity" style="font-size:36px";></i></a> <a href="https://www.linkedin.com/in/nelsonlan574211143"><i class="fa fa-linkedin w3-hover-opacity" style="font-size:36px";></i></a> </div>
+  <p>  © 版權屬 Nelson LAN 所有 (2012 - 2023)</p>
+  <p>  © Copyright belong to NelsonLAN (2012 - 2023) </p>
+</footer><!-- Footer -->
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+document.getElementById("img01").src = element.src;
+document.getElementById("modal01").style.display = "block";
+var captionText = document.getElementById("caption");
+captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+var navbar = document.getElementById("myNavbar");
+if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+} else {
+navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+}
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+var x = document.getElementById("navDemo");
+if (x.className.indexOf("w3-show") == -1) {
+x.className += " w3-show";
+} else {
+x.className = x.className.replace(" w3-show", "");
+}
+}
+</script>
+
+
+</body>
+</html>
