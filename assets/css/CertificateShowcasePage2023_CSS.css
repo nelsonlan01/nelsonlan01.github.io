@@ -95,7 +95,7 @@
     font-size: 75px;
 	border: 10px solid transparent;
 }
-#slide95, #slide96, #slide97, #slide98, #slide99 {
+#slide31, #slide32, #slide33, #slide34, #slide35, #slide36, #slide37 {
 	object-fit: cover;
     position: absolute;
     width: 100%;
@@ -231,6 +231,9 @@ li{
 	font-size: 75px; opacity: 1;
 }
 #slide95:target, #slide96:target, #slide97:target, #slide98:target , #slide99:target {
+	font-size: 75px; opacity: 1;
+}
+#slide31:target, #slide32:target, #slide33:target, #slide34:target , #slide35:target , #slide36:target , #slide37:target {
 	font-size: 75px; opacity: 1;
 }
 
