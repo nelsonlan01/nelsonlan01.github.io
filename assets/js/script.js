@@ -141,11 +141,13 @@ const pages = document.querySelectorAll("[data-page]");
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
 	// when going back to portfolio, deactivate project pages
-	if (this.innerHTML.toLowerCase() === "portfolio") {
-	  document.querySelectorAll('article[data-page^="project"]').forEach(p => {
-		p.classList.remove("active");
-	  });
-	}
+
+  if (this.innerHTML.toLowerCase() === "portfolio") {
+    document
+      .querySelectorAll("article[data-page]:not([data-page='portfolio'])")
+      .forEach(p => p.classList.remove("active"));
+  }
+
 
     for (let i = 0; i < pages.length; i++) {
       if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
