@@ -2101,6 +2101,55 @@ pre code {
 }
 
 
+/*cgd section*/
+/* ===== 2x2 responsive grid ===== */
+.uwecgd-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+/* anchor should not affect layout */
+.uwecgd-grid a {
+  display: block;
+  width: 100%;
+}
+
+/* image behavior */
+.uwecgd-grid img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: var(--shadow-2);
+  cursor: zoom-in;
+  transition: transform 0.25s ease;
+}
+
+/* hover hint */
+.uwecgd-grid a:hover img {
+  transform: scale(1.03);
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 600px) {
+  .uwecgd-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pdf-embed-wrapper {
+  margin-top: 20px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-2);
+  background: var(--eerie-black-2);
+}
+
+.pdf-embed-wrapper iframe {
+  border: none;
+}
+
 
 
 
