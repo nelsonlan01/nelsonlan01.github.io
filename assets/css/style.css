@@ -4,12 +4,8 @@
 
 
 /**
- * copyright 2022 @codewithsadee
+Referenced: (@codewithsadee, 2022)
  */
-
-
-
-
 
 /*-----------------------------------*\
   #CUSTOM PROPERTY
@@ -2259,6 +2255,50 @@ pre code {
 }
 
 
+.blog-modal-text table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+.blog-modal-text th,
+.blog-modal-text td {
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  text-align: left;
+}
+
+.blog-modal-text th {
+  background-color: #f0f0f0;
+}
+
+/* Table styling for modal content */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--white-2); /* Makes text white */
+  font-size: var(--fs-6);
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  border: 1px solid var(--jet); /* subtle border for readability */
+  text-align: left;
+}
+
+.table th {
+  background: var(--eerie-black-1); /* slightly darker header */
+  color: var(--white-2);
+}
+
+.table tr:nth-child(even) {
+  background: var(--eerie-black-2); /* alternating row color */
+}
+
+.table tr:hover {
+  background: var(--onyx); /* highlight row on hover */
+}
 
 
 

@@ -277,7 +277,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       modalImg.src = source.querySelector("img")?.src || "";
       modalTitle.innerHTML = source.querySelector("h3")?.innerHTML || "";
-      modalText.innerHTML = source.querySelector("p")?.innerHTML || "";
+      modalText.innerHTML = source.innerHTML;
+
 
       modal.classList.add("active");
     });
