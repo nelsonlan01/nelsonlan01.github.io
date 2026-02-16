@@ -353,14 +353,21 @@
 
           <ul class="testimonials-list has-scrollbar">
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+			<li class="testimonials-item" data-testimonial-id="sophie">
+			  <div class="content-card" data-testimonials-item>
 
-                <figure class="testimonials-avatar-box">
-	                  <img class="circle-img" src="./assets/images/Testimonials/RIP_SophieWong.png" alt="SophieWong" width="30" data-testimonials-avatar>
-                </figure>
+				<figure class="testimonials-avatar-box">
+				  <img class="circle-img"
+					   src="./assets/images/Testimonials/RIP_SophieWong.png"
+					   alt="SophieWong"
+					   width="30"
+					   data-testimonials-avatar>
+				</figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title> Wong Sophie</h4>
+				<h4 class="h4 testimonials-item-title"
+					data-testimonials-title>
+				  Wong Sophie
+				</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
@@ -1892,33 +1899,27 @@
 
           <ul class="blog-posts-list">
 
-            <li class="blog-post-item">
-              <a href="#">
+				<li class="blog-post-item">
+  <a href="#" data-blog-popup="lecture-notes">
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
+    <figure class="blog-banner-box">
+      <img src="./assets/images/blog-1.jpg" loading="lazy">
+    </figure>
 
-                <div class="blog-content">
+    <div class="blog-content">
+      <h3 class="h3 blog-item-title">
+        過往授課筆記 Released Lectures Notes
+      </h3>
 
-                  <div class="blog-meta">
-                    <p class="blog-category">Lecture Design</p>
+      <p class="blog-text">
+        Past lecture notes while serving as a teaching assistant.
+      </p>
+    </div>
 
-                    <span class="dot"></span>
+  </a>
+</li>
 
-                    <time datetime="2022-10-31">2022</time>
-                  </div>
 
-                  <h3 class="h3 blog-item-title">過往授課筆記 Released Lectures Notes</h3>
-
-                  <p class="blog-text">
-                    Past lecture notes while serving as a teaching assistant and peer educator in a primary school.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
 
             <!--li class="blog-post-item">
               <a href="#">
@@ -5097,7 +5098,20 @@ https://www.tw.playblackdesert.com/zh-TW/News/Detail?groupContentNo=11354&countr
 	</article>	
 	<!-- Project template Content -->  
 	
-	
+	<div hidden data-blog-content="lecture-notes">
+
+  <img src="./assets/images/blog-1.jpg">
+  
+
+  <h3>過往授課筆記 Released Lectures Notes</h3>
+
+  <p>
+    Full lecture notes, PDFs, explanations, reflections,
+    and teaching philosophy can go here.
+  </p>
+
+</div>
+
 	
 
 </main>
@@ -5117,7 +5131,33 @@ https://www.tw.playblackdesert.com/zh-TW/News/Detail?groupContentNo=11354&countr
   <script nomodule src="./assets/js/ionicons.js"></script>
 
 
+<div class="blog-modal" data-blog-modal>
+
+  <div class="blog-overlay" data-blog-overlay></div>
+
+  <section class="blog-modal-content" data-blog-modal-content>
+
+    <button class="blog-modal-close-btn" data-blog-close>
+      ✕
+    </button>
+
+    <figure class="blog-modal-img-box">
+      <img data-blog-modal-img>
+    </figure>
+
+    <h3 class="h3" data-blog-modal-title></h3>
+
+    <div class="blog-modal-text" data-blog-modal-text></div>
+
+  </section>
+
+</div>
+
+
 </body>
+
+
+
 
 
 </html>
