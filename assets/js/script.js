@@ -254,6 +254,57 @@ document.querySelectorAll("[data-open-project]").forEach(link => {
 
 
 
+document.addEventListener("DOMContentLoaded", () => {
+
+  const modal = document.querySelector("[data-blog-modal]");
+  const overlay = document.querySelector("[data-blog-overlay]");
+  const closeBtn = document.querySelector("[data-blog-close]");
+
+  const modalImg = document.querySelector("[data-blog-modal-img]");
+  const modalTitle = document.querySelector("[data-blog-modal-title]");
+  const modalText = document.querySelector("[data-blog-modal-text]");
+
+  document.querySelectorAll("[data-blog-popup]").forEach(link => {
+    link.addEventListener("click", e => {
+      e.preventDefault();
+
+      const id = link.dataset.blogPopup;
+      const source = document.querySelector(
+        `[data-blog-content="${id}"]`
+      );
+
+      if (!source) return;
+
+      modalImg.src = source.querySelector("img")?.src || "";
+      modalTitle.innerHTML = source.querySelector("h3")?.innerHTML || "";
+      modalText.innerHTML = source.innerHTML;
+
+
+      modal.classList.add("active");
+    });
+  });
+
+  const closeModal = () => modal.classList.remove("active");
+
+  closeBtn.addEventListener("click", closeModal);
+  overlay.addEventListener("click", closeModal);
+
+});
+const blogModal = document.querySelector("[data-blog-modal]");
+const blogOverlay = document.querySelector("[data-blog-overlay]");
+const blogCloseBtn = document.querySelector("[data-blog-close]");
+
+const closeBlogModal = () => {
+  blogModal.classList.remove("active");
+};
+
+blogCloseBtn.addEventListener("click", closeBlogModal);
+blogOverlay.addEventListener("click", closeBlogModal);
+
+// optional: ESC key
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") closeBlogModal();
+});
 
 
 

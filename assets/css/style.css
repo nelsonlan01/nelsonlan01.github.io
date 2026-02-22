@@ -4,12 +4,8 @@
 
 
 /**
- * copyright 2022 @codewithsadee
+Referenced: (@codewithsadee, 2022)
  */
-
-
-
-
 
 /*-----------------------------------*\
   #CUSTOM PROPERTY
@@ -2151,11 +2147,170 @@ pre code {
 }
 
 
+/* ================================
+   BLOG MODAL — RESPONSIVE
+================================ */
+
+.blog-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .25s ease;
+}
+
+.blog-modal.active {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.blog-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.65);
+}
+
+/* modal box */
+.blog-modal-content {
+  position: relative;
+  background: var(--eerie-black-2);
+
+  width: min(92vw, 760px);
+  max-height: 90vh;
+
+  margin: auto;
+  padding: clamp(16px, 3vw, 28px);
+  border-radius: 18px;
+
+  overflow-y: auto;
+
+  /* animation */
+  transform: translateY(20px) scale(.97);
+  transition: transform .25s ease;
+}
+
+.blog-modal.active .blog-modal-content {
+  transform: translateY(0) scale(1);
+}
+
+/* image */
+.blog-modal-img-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+/* close button */
+.blog-modal-close-btn {
+  position: sticky;
+  top: 0;
+  float: right;
+
+  background: var(--onyx);
+  color: var(--white-2);
+
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* text */
+.blog-modal-text {
+  font-size: clamp(14px, 3vw, 16px);
+  line-height: 1.6;
+}
+
+/* ================================
+   MOBILE OPTIMIZATION
+================================ */
+@media (max-width: 600px) {
+
+  .blog-modal-content {
+    width: 100vw;
+    height: 100vh;
+    max-height: none;
+
+    border-radius: 0;
+    padding: 16px 14px 24px;
+  }
+
+  .blog-modal-close-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+  }
+}
 
 
+.blog-modal-text table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+.blog-modal-text th,
+.blog-modal-text td {
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  text-align: left;
+}
+
+.blog-modal-text th {
+  background-color: #f0f0f0;
+}
+
+/* Table styling for modal content */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--white-2); /* Makes text white */
+  font-size: var(--fs-6);
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  border: 1px solid var(--jet); /* subtle border for readability */
+  text-align: left;
+}
+
+.table th {
+  background: var(--eerie-black-1); /* slightly darker header */
+  color: var(--white-2);
+}
+
+.table tr:nth-child(even) {
+  background: var(--eerie-black-2); /* alternating row color */
+}
+
+.table tr:hover {
+  background: var(--onyx); /* highlight row on hover */
+}
 
 
+.pushable {
+  padding: 0 !important;
+  margin: 0 !important;
+}
 
+button.pushable {
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none;
+}
 
 
 
