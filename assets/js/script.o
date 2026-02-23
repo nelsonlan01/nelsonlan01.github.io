@@ -138,19 +138,16 @@ const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
 // add event to all nav link
-// collect the page names that correspond to nav links
-const navPageNames = [...navigationLinks].map(link => link.innerHTML.toLowerCase());
-
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
+	// when going back to portfolio, deactivate project pages
 
-    // Deactivate ALL sub-pages that are not direct nav targets
-    // (covers project pages, material pages, and any other injected pages)
-    document.querySelectorAll("article[data-page]").forEach(p => {
-      if (!navPageNames.includes(p.dataset.page)) {
-        p.classList.remove("active");
-      }
-    });
+  if (this.innerHTML.toLowerCase() === "portfolio") {
+    document
+      .querySelectorAll("article[data-page]:not([data-page='portfolio'])")
+      .forEach(p => p.classList.remove("active"));
+  }
+
 
     for (let i = 0; i < pages.length; i++) {
       if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
