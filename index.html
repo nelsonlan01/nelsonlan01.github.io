@@ -345,32 +345,95 @@
         <!--
           - Metadata and Statistics of Personal Branding
         -->
-        <section class="testimonials">
-		         <h3 class="h3 article-title testimonials-title">Metadata and Statistics of Personal Branding</h3>
-					<p class="service-item-text">
-						Coming Soon...Stay Tuned.
-					</p>
-					
-				<!--ul class="testimonials-list has-scrollbar">
-					<li class="testimonials-item">
-					  <div class="content-card" data-testimonials-item>
+<section class="testimonials stats-branding-section">
+  <h3 class="h3 article-title testimonials-title">Statistics and Metadata of Personal Branding</h3>
 
-						<figure class="testimonials-avatar-box">
-						  <img src="./assets/images/avatar-2.png" alt="pic1" width="60" data-testimonials-avatar>
-						</figure>
+  <div class="stats-platforms-grid">
 
-						<h5 class="h5 testimonials-item-title" data-testimonials-title> Test</h5>
+    <!-- ── YouTube ───────────────────────────────────── -->
+    <div class="stats-platform-card" data-platform="youtube">
+      <div class="stats-platform-header">
+        <span class="stats-platform-icon">
+          <!-- YouTube SVG logo -->
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M23.5 6.2a3.01 3.01 0 0 0-2.12-2.13C19.54 3.6 12 3.6 12 3.6s-7.54 0-9.38.47A3.01 3.01 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3.01 3.01 0 0 0 2.12 2.13C4.46 20.4 12 20.4 12 20.4s7.54 0 9.38-.47a3.01 3.01 0 0 0 2.12-2.13A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.75 15.52V8.48L15.5 12l-5.75 3.52z"/>
+          </svg>
+        </span>
+        <span class="stats-platform-name">YouTube</span>
+      </div>
+      <ul class="stats-metrics-list">
+        <li class="stats-metric" data-key="yt_views">
+          <span class="stats-metric-value" data-target="yt_views">0</span>
+          <span class="stats-metric-label">Total Views 觀看次數</span>
+        </li>
+        <li class="stats-metric" data-key="yt_hours">
+          <span class="stats-metric-value" data-target="yt_hours">0</span>
+          <span class="stats-metric-label">Watch Hours 觀看時間 (小時)</span>
+        </li>
+        <li class="stats-metric" data-key="yt_list_played">
+          <span class="stats-metric-value" data-target="yt_list_played">0</span>
+          <span class="stats-metric-label"> Playlist Total Views 播放清單觀看次數</span>
+        </li>
+        <li class="stats-metric" data-key="yt_likes">
+          <span class="stats-metric-value" data-target="yt_likes">0</span>
+          <span class="stats-metric-label">Total Likes 喜歡次數</span>
+        </li>
+		<li class="stats-metric" data-key="yt_likes_ratio">
+          <span class="stats-metric-value" data-target="yt_likes_ratio">0</span>
+          <span class="stats-metric-label">Likes Ratio 喜歡的比例 (%)</span>
+        </li>
+		<li class="stats-metric" data-key="yt_imps">
+          <span class="stats-metric-value" data-target="yt_imps">0</span>
+          <span class="stats-metric-label">Impression 曝光次數</span>
+        </li>
+		<li class="stats-metric" data-key="yt_subs">
+          <span class="stats-metric-value" data-target="yt_subs">0</span>
+          <span class="stats-metric-label">Subscribers 訂閱人數</span>
+        </li>
+      </ul>
+    </div>
 
-						<div class="testimonials-text" data-testimonials-text>
-						  <p>
-							Test <br><br>
-						  </p>
-						</div>
+    <!-- ── Steam Workshop ────────────────────────────── -->
+    <div class="stats-platform-card" data-platform="steam">
+      <div class="stats-platform-header">
+        <span class="stats-platform-icon">
+          <!-- Steam SVG logo -->
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.029 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.606 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.497 1.009 2.455-.397.957-1.494 1.41-2.455 1.012H7.54zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.252 0-2.265-1.014-2.265-2.265z"/>
+          </svg>
+        </span>
+        <span class="stats-platform-name">Steam Workshop</span>
+      </div>
+      <ul class="stats-metrics-list">
+        <li class="stats-metric" data-key="sw_views">
+          <span class="stats-metric-value" data-target="sw_views">0</span>
+          <span class="stats-metric-label">Unique Visitors 查看次數</span>
+        </li>
+        <li class="stats-metric" data-key="sw_subs">
+          <span class="stats-metric-value" data-target="sw_subs">0</span>
+          <span class="stats-metric-label">Subscribers 訂閱人次</span>
+        </li>
+        <li class="stats-metric" data-key="sw_favourite">
+          <span class="stats-metric-value" data-target="sw_favourite">0</span>
+          <span class="stats-metric-label">Unique Favourites 加到最愛次數</span>
+        </li>
+        <li class="stats-metric" data-key="sw_likes">
+          <span class="stats-metric-value" data-target="sw_likes">0</span>
+          <span class="stats-metric-label">Unique Likes 喜歡次數</span>
+        </li>
+        <li class="stats-metric" data-key="sw_collection">
+          <span class="stats-metric-value" data-target="sw_collection">0</span>
+          <span class="stats-metric-label">Add to Collection 被加到收藏集次數</span>
+        </li>
+      </ul>
+    </div>
 
-					  </div>
-					</li>
-				</ul-->
-        </section>	
+    <!-- ── Add more platform cards here following the same pattern ── -->
+
+  </div><!-- /.stats-platforms-grid -->
+
+  <p class="stats-footnote">✦ Statistics are approximate and updated periodically.</p>
+</section>
         <!--
           - testimonials
         -->
@@ -5631,41 +5694,261 @@ Reference Material:
   <!--
     - ionicon link-->
   
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <!--script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  
-  <!--
-  <script type="module" src="./assets/js/ionicons.esm.js"></script>-->
-  <script nomodule src="./assets/js/ionicons.js"></script>
+	<!-- ══════════════════════════════════════════════════════
+			 SCRIPT  — place just before </body> or keep it here
+		 ══════════════════════════════════════════════════════ -->
+	<script>
+		(function () {
+		  /* ────────────────────────────────────────────────────
+			 ★  EDIT YOUR NUMBERS HERE  ★
+			 Use whole integers only.  The formatter handles K / M.
+			 Unit suffix is appended to the label automatically
+			 for "hours"-labelled metrics.
+		  ──────────────────────────────────────────────────── */
+		  const STATS = {
+			yt_views:  210400,   // YouTube total views
+			yt_likes:   1376,    // YouTube total likes
+			yt_list_played: 704,
+			yt_subs:     290,    // YouTube subscribers
+			yt_hours:   3620.7524,    // YouTube watch hours
+			yt_likes_ratio: 95.69,
+			yt_imps: 1057325,
+			yt_shares: 507,
+
+			sw_views:   8138,    // Steam Workshop unique visitors
+			sw_subs:    7091,    // Steam Workshop subscribers
+			sw_likes:    36,    // Steam Workshop likes
+			sw_favourite:  130,  // Steam Workshop favourites
+			sw_collection:  167  // Steam Workshop collection
+		  };
+
+		  /* ── Number formatter ─────────────────────────────── */
+		  function fmt(n) {
+			if (n >= 1_000_000) return (n / 1_000_000).toFixed(n % 1_000_000 === 0 ? 0 : 1) + 'M';
+			if (n >= 1_000)     return (n / 1_000).toFixed(n % 1_000 === 0 ? 0 : 1) + 'K';
+			return Math.round(n).toString();
+		  }
+
+		  /* ── Easing: slow-in → slow-out (cubic) ────────────── */
+		  function easeInOutCubic(t) {
+			return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+		  }
+
+		  /* ── Animate a single element ───────────────────────── */
+		  function animateValue(el, target, duration) {
+			const start = performance.now();
+
+			function tick(now) {
+			  const elapsed  = now - start;
+			  const progress = Math.min(elapsed / duration, 1);
+			  const eased    = easeInOutCubic(progress);
+			  const current  = eased * target;
+
+			  el.textContent = fmt(current);
+
+			  /* micro "jump" effect on each frame */
+			  el.classList.remove('ticking');
+			  void el.offsetWidth; // reflow to restart animation
+			  el.classList.add('ticking');
+
+			  if (progress < 1) requestAnimationFrame(tick);
+			  else el.textContent = fmt(target); // land exactly on target
+			}
+
+			requestAnimationFrame(tick);
+		  }
+
+		  /* ── Wire up all metric elements ───────────────────── */
+		  function runAllCounters() {
+			document.querySelectorAll('[data-target]').forEach(el => {
+			  const key = el.dataset.target;
+			  if (key in STATS) animateValue(el, STATS[key], 2200);
+			});
+		  }
+
+		  /* ── Trigger once when section scrolls into view ────── */
+		  const section = document.querySelector('.stats-branding-section');
+		  if (!section) return;
+
+		  if ('IntersectionObserver' in window) {
+			const observer = new IntersectionObserver(
+			  entries => {
+				if (entries[0].isIntersecting) {
+				  runAllCounters();
+				  observer.disconnect();
+				}
+			  },
+			  { threshold: 0.25 }
+			);
+			observer.observe(section);
+		  } else {
+			// Fallback for very old browsers
+			runAllCounters();
+		  }
+		})();
+		</script>
 
 
-<div class="blog-modal" data-blog-modal>
+	<div class="blog-modal" data-blog-modal>
 
-  <div class="blog-overlay" data-blog-overlay></div>
+	  <div class="blog-overlay" data-blog-overlay></div>
 
-  <section class="blog-modal-content" data-blog-modal-content>
+	  <section class="blog-modal-content" data-blog-modal-content>
 
-    <button class="blog-modal-close-btn" data-blog-close>
-      ✕
-    </button>
+		<button class="blog-modal-close-btn" data-blog-close>
+		  ✕
+		</button>
 
-    <figure class="blog-modal-img-box">
-      <img data-blog-modal-img>
-    </figure>
+		<figure class="blog-modal-img-box">
+		  <img data-blog-modal-img>
+		</figure>
 
-    <h3 class="h3" data-blog-modal-title></h3>
+		<h3 class="h3" data-blog-modal-title></h3>
 
-    <div class="blog-modal-text" data-blog-modal-text></div>
+		<div class="blog-modal-text" data-blog-modal-text></div>
 
-  </section>
+	  </section>
 
-</div>
+	</div>
 
+	<!-- ══════════════════════════════════════════════════════
+		 STYLES  — scoped with .stats-* prefix, won't clash
+		 ══════════════════════════════════════════════════════ -->
+	<style>
+	  /* ── Layout ─────────────────────────────────────────── */
+	  .stats-branding-section {
+		padding-block: 24px;
+	  }
 
+	  .stats-platforms-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+		gap: 20px;
+		margin-top: 22px;
+	  }
+
+	  /* ── Platform card ───────────────────────────────────── */
+	  .stats-platform-card {
+		background: var(--border-gradient-onyx, linear-gradient(135deg, #2a2a2a 0%, #1e1e1e 100%));
+		border: 1px solid var(--jet, #333);
+		border-radius: 14px;
+		padding: 22px 22px 18px;
+		position: relative;
+		overflow: hidden;
+		transition: transform .25s ease, box-shadow .25s ease;
+	  }
+
+	  .stats-platform-card::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		background: radial-gradient(ellipse at top left, rgba(255,255,255,.04) 0%, transparent 60%);
+		pointer-events: none;
+	  }
+
+	  .stats-platform-card:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 12px 32px rgba(0,0,0,.45);
+	  }
+
+	  /* ── Platform header ─────────────────────────────────── */
+	  .stats-platform-header {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		margin-bottom: 20px;
+		padding-bottom: 14px;
+		border-bottom: 1px solid var(--jet, #333);
+	  }
+
+	  .stats-platform-icon {
+		width: 36px;
+		height: 36px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 8px;
+		flex-shrink: 0;
+		background: rgba(255,255,255,.06);
+	  }
+
+	  .stats-platform-icon svg {
+		width: 20px;
+		height: 20px;
+	  }
+
+	  /* Platform-specific accent colours */
+	  [data-platform="youtube"] .stats-platform-icon { color: #ff4444; background: rgba(255,68,68,.12); }
+	  [data-platform="steam"]   .stats-platform-icon { color: #66c0f4; background: rgba(102,192,244,.12); }
+
+	  .stats-platform-name {
+		font-family: 'Poppins', sans-serif;
+		font-size: 15px;
+		font-weight: 600;
+		color: var(--white-1, #fff);
+		letter-spacing: .3px;
+	  }
+
+	  /* ── Metrics list ────────────────────────────────────── */
+	  .stats-metrics-list {
+		list-style: none;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 16px 10px;
+		padding: 0;
+		margin: 0;
+	  }
+
+	  .stats-metric {
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+	  }
+
+	  .stats-metric-value {
+		font-family: 'Poppins', sans-serif;
+		font-size: clamp(20px, 3.5vw, 26px);
+		font-weight: 700;
+		color: var(--orange-yellow-crayola, #e8b84b);
+		line-height: 1;
+		letter-spacing: -.5px;
+		/* The "jump" animation — slight scale pop on each tick */
+		display: inline-block;
+		transition: transform .04s ease;
+	  }
+
+	  .stats-metric-value.ticking {
+		animation: statJump .08s ease-out forwards;
+	  }
+
+	  @keyframes statJump {
+		0%   { transform: scale(1.12); }
+		100% { transform: scale(1);    }
+	  }
+
+	  .stats-metric-label {
+		font-size: 11px;
+		font-weight: 400;
+		color: var(--light-gray-70, #a6a6a6);
+		text-transform: uppercase;
+		letter-spacing: .6px;
+		line-height: 1.3;
+	  }
+
+	  /* Platform-specific number colours */
+	  [data-platform="youtube"] .stats-metric-value { color: #ff8888; }
+	  [data-platform="steam"]   .stats-metric-value { color: #66c0f4; }
+
+	  /* ── Footnote ────────────────────────────────────────── */
+	  .stats-footnote {
+		margin-top: 16px;
+		font-size: 11.5px;
+		color: var(--light-gray-70, #888);
+		text-align: right;
+		letter-spacing: .2px;
+	  }
+	</style>
 </body>
-
-
-
 
 
 </html>
