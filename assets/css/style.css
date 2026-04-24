@@ -2313,6 +2313,142 @@ button.pushable {
 }
 
 
+/* ══════════════════════════════════════════════════════
+        /* Personal Branding Data*/
+ /* ═════════════════════════════════════════════════════  */
+  .stats-branding-section {
+    padding-block: 24px;
+  }
+
+  .stats-platforms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin-top: 22px;
+  }
+
+  /* ── Platform card ───────────────────────────────────── */
+  .stats-platform-card {
+    background: var(--border-gradient-onyx, linear-gradient(135deg, #2a2a2a 0%, #1e1e1e 100%));
+    border: 1px solid var(--jet, #333);
+    border-radius: 14px;
+    padding: 22px 22px 18px;
+    position: relative;
+    overflow: hidden;
+    transition: transform .25s ease, box-shadow .25s ease;
+  }
+
+  .stats-platform-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at top left, rgba(255,255,255,.04) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .stats-platform-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0,0,0,.45);
+  }
+
+  /* ── Platform header ─────────────────────────────────── */
+  .stats-platform-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--jet, #333);
+  }
+
+  .stats-platform-icon {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    flex-shrink: 0;
+    background: rgba(255,255,255,.06);
+  }
+
+  .stats-platform-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Platform-specific accent colours */
+  [data-platform="youtube"] .stats-platform-icon { color: #ff4444; background: rgba(255,68,68,.12); }
+  [data-platform="steam"]   .stats-platform-icon { color: #66c0f4; background: rgba(102,192,244,.12); }
+
+  .stats-platform-name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--white-1, #fff);
+    letter-spacing: .3px;
+  }
+
+  /* ── Metrics list ────────────────────────────────────── */
+  .stats-metrics-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 10px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .stats-metric {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .stats-metric-value {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(20px, 3.5vw, 26px);
+    font-weight: 700;
+    color: var(--orange-yellow-crayola, #e8b84b);
+    line-height: 1;
+    letter-spacing: -.5px;
+    /* The "jump" animation — slight scale pop on each tick */
+    display: inline-block;
+    transition: transform .04s ease;
+  }
+
+  .stats-metric-value.ticking {
+    animation: statJump .08s ease-out forwards;
+  }
+
+  @keyframes statJump {
+    0%   { transform: scale(1.12); }
+    100% { transform: scale(1);    }
+  }
+
+  .stats-metric-label {
+    font-size: 11px;
+    font-weight: 400;
+    color: var(--light-gray-70, #a6a6a6);
+    text-transform: uppercase;
+    letter-spacing: .6px;
+    line-height: 1.3;
+  }
+
+  /* Platform-specific number colours */
+  [data-platform="youtube"] .stats-metric-value { color: #ff8888; }
+  [data-platform="steam"]   .stats-metric-value { color: #66c0f4; }
+
+  /* ── Footnote ────────────────────────────────────────── */
+  .stats-footnote {
+    margin-top: 16px;
+    font-size: 11.5px;
+    color: var(--light-gray-70, #888);
+    text-align: right;
+    letter-spacing: .2px;
+  }
+
+
 
 
 
