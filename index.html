@@ -490,8 +490,78 @@
     <!-- ── Add more platform cards here following the same pattern ── -->
 
   </div><!-- /.stats-platforms-grid -->
+    <p class="w3-center stats-footnote">✦ All the above-named statistics are approximate and updated periodically; last update MAY 2026.</p>
+<!--
+  - Accumulated Invested Value
+-->
+<section class="testimonials stats-branding-section">
+  <h3 class="h3 article-title testimonials-title">Project Accumulated Invested Value (in Hours)</h3>
 
-  <p class="stats-footnote">✦ Statistics are approximate and updated periodically, last update MAY 2026</p>
+  <div class="stats-platforms-grid stats-platforms-grid--single">
+
+    <!-- TODO: replace acc_inv_hours placeholder in STATS once project-log hours are compiled -->
+    <div class="stats-platform-card" data-platform="invested-value">
+      <div class="stats-platform-header">
+        <span class="stats-platform-icon">
+          <!-- Clock icon -->
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M16.2,16.2L11,13V7H12.5V12.2L17,14.9L16.2,16.2Z"/>
+          </svg>
+        </span>
+        <span class="stats-platform-name">Invested Time</span>
+      </div>
+      <ul class="stats-metrics-list">
+        <li class="stats-metric" data-key="acc_inv_hours">
+          <span class="stats-metric-value" data-target="acc_inv_hours">0</span>
+          <span class="stats-metric-label">Accumulated Hours 累積投入時數</span>
+        </li>
+      </ul>
+    </div>
+
+  </div><!-- /.stats-platforms-grid -->
+
+  <p class="stats-footnote">✦ Investment value includes auditable project hours— billable, preparation, and DevOps time, etc. Sourced from past project logs.</p>
+</section>
+
+	<!--
+	  - Social Media Impact
+	-->
+	<section class="testimonials stats-branding-section">
+	  <h3 class="h3 article-title testimonials-title">Social Media Impact</h3>
+
+	  <div class="stats-platforms-grid stats-platforms-grid--single">
+
+		<!-- TODO: replace reddit_karma / thread_views placeholders in STATS once pulled -->
+		<div class="stats-platform-card" data-platform="reddit">
+		  <div class="stats-platform-header">
+			<span class="stats-platform-icon">
+			  <!-- Speech bubble icon -->
+			  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+				<path d="M12,3C17.5,3 22,6.58 22,11C22,15.42 17.5,19 12,19C10.76,19 9.57,18.82 8.47,18.5C5.55,21 2,21 2,21C4.33,18.67 4.7,17.1 4.75,16.5C3.05,15.07 2,13.13 2,11C2,6.58 6.5,3 12,3Z"/>
+			  </svg>
+			</span>
+			<span class="stats-platform-name">Social Media (Threads, Reddit...etc)</span>
+		  </div>
+		  <ul class="stats-metrics-list">
+
+			<li class="stats-metric" data-key="thread_views">
+			  <span class="stats-metric-value" data-target="thread_views">0</span>
+			  <span class="stats-metric-label">Thread Views (Thread 瀏覽次數)</span>
+			</li>
+			
+			<li class="stats-metric" data-key="reddit_karma">
+			  <span class="stats-metric-value" data-target="reddit_karma">0</span>
+			  <span class="stats-metric-label">Reddit Karma</span>
+			</li>
+
+		  </ul>
+		</div>
+
+	  </div><!-- /.stats-platforms-grid -->
+
+	  <p class="stats-footnote">✦ This stat is counted for sense of humour, offering help, and reaching people.</p>
+	</section>
+
 </section>
         <!--
           - testimonials
@@ -8245,7 +8315,11 @@ https://www.tw.playblackdesert.com/zh-TW/News/Detail?groupContentNo=11354&countr
 			sw_subs:    7091,    // Steam Workshop subscribers
 			sw_likes:    36,    // Steam Workshop likes
 			sw_favourite:  130,  // Steam Workshop favourites
-			sw_collection:  167  // Steam Workshop collection
+			sw_collection:  167,  // Steam Workshop collection
+			
+			acc_inv_hours: 9650,   // Accumulated auditable project hours (billable + prep + DevOps, from project logs)
+			reddit_karma:  2000,   // Reddit karma total
+			thread_views:  1923    // Cumulative thread view count
 		  };
 
 		  /* ── Number formatter ─────────────────────────────── */
@@ -8341,6 +8415,16 @@ https://www.tw.playblackdesert.com/zh-TW/News/Detail?groupContentNo=11354&countr
 		 STYLES  — scoped with .stats-* prefix, won't clash
 		 ══════════════════════════════════════════════════════ -->
 	<style>
+	* Single-card variant for the future-stats sections */
+	.stats-platforms-grid--single {
+	  max-width: 340px;
+	}
+	[data-platform="invested-value"] .stats-platform-icon { color: var(--orange-yellow-crayola, #e8b84b); background: rgba(232,184,75,.15); }
+	
+	/* Reddit accent (add alongside the youtube/steam accent rules) */
+	[data-platform="reddit"] .stats-platform-icon { color: #4fd8ff; background: rgba(79,216,255,.14); }
+	[data-platform="reddit"] .stats-metric-value  { color: #4fd8ff; }
+	
 	  /* ── Layout ─────────────────────────────────────────── */
 	  .stats-branding-section {
 		padding-block: 24px;
